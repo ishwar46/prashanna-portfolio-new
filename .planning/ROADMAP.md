@@ -30,7 +30,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Tapping the phone number on a mobile device triggers a call
   4. The hamburger menu opens and closes on screens narrower than the desktop breakpoint, revealing navigation links
   5. The footer displays personal NMLS #2528620, company NMLS (Loan Factory #320841), Equal Housing Lender text, and the legal disclaimer about not being a commitment to lend
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 01-01-PLAN.md — Design system (navy/gold tokens), constants, SectionWrapper, page scaffolding, layout wiring
+- [ ] 01-02-PLAN.md — Sticky header with transparent-to-solid scroll, desktop nav, phone CTA, mobile hamburger menu
+- [ ] 01-03-PLAN.md — Footer with compliance disclosures (NMLS, Equal Housing, disclaimer), contact, social links
 
 ### Phase 2: Static Content Sections
 **Goal**: Visitors can read Prashanna's full professional story, see all loan products, and review client testimonials without any page load gaps
@@ -86,7 +90,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Compliance | 0/TBD | Not started | - |
+| 1. Foundation and Compliance | 0/3 | Planned | - |
 | 2. Static Content Sections | 0/TBD | Not started | - |
 | 3. Interactive Sections | 0/TBD | Not started | - |
 | 4. SEO and Analytics | 0/TBD | Not started | - |
