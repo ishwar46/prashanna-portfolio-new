@@ -15,7 +15,7 @@
 ### Layout & Navigation
 
 - [ ] **NAV-01**: Sticky header with logo, navigation links, and phone number
-- [ ] **NAV-02**: Smooth scroll anchor navigation between sections
+- [x] **NAV-02**: Smooth scroll anchor navigation between sections
 - [ ] **NAV-03**: Phone number (571) 222-5555 as tap-to-call `tel:` link
 - [ ] **NAV-04**: Mobile-responsive hamburger menu on small screens
 - [ ] **NAV-05**: Footer with compliance disclosures, contact info, and copyright
@@ -115,7 +115,7 @@
 | COMP-03 | Phase 1 | Pending |
 | COMP-04 | Phase 1 | Pending |
 | NAV-01 | Phase 1 | Pending |
-| NAV-02 | Phase 1 | Pending |
+| NAV-02 | Phase 1 | Complete |
 | NAV-03 | Phase 1 | Pending |
 | NAV-04 | Phase 1 | Pending |
 | NAV-05 | Phase 1 | Pending |
