@@ -7,17 +7,17 @@
 
 ### Compliance
 
-- [ ] **COMP-01**: NMLS number (#2528620) displayed in header and footer
+- [x] **COMP-01**: NMLS number (#2528620) displayed in header and footer
 - [ ] **COMP-02**: Company NMLS (Loan Factory #320841) displayed in footer
 - [ ] **COMP-03**: Equal Housing Lender logo and text in footer
 - [ ] **COMP-04**: Legal disclaimer in footer ("Not a commitment to lend. Terms and conditions apply.")
 
 ### Layout & Navigation
 
-- [ ] **NAV-01**: Sticky header with logo, navigation links, and phone number
+- [x] **NAV-01**: Sticky header with logo, navigation links, and phone number
 - [x] **NAV-02**: Smooth scroll anchor navigation between sections
-- [ ] **NAV-03**: Phone number (571) 222-5555 as tap-to-call `tel:` link
-- [ ] **NAV-04**: Mobile-responsive hamburger menu on small screens
+- [x] **NAV-03**: Phone number (571) 222-5555 as tap-to-call `tel:` link
+- [x] **NAV-04**: Mobile-responsive hamburger menu on small screens
 - [ ] **NAV-05**: Footer with compliance disclosures, contact info, and copyright
 
 ### Hero
@@ -110,14 +110,14 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| COMP-01 | Phase 1 | Pending |
+| COMP-01 | Phase 1 | Complete |
 | COMP-02 | Phase 1 | Pending |
 | COMP-03 | Phase 1 | Pending |
 | COMP-04 | Phase 1 | Pending |
-| NAV-01 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Complete |
 | NAV-02 | Phase 1 | Complete |
-| NAV-03 | Phase 1 | Pending |
-| NAV-04 | Phase 1 | Pending |
+| NAV-03 | Phase 1 | Complete |
+| NAV-04 | Phase 1 | Complete |
 | NAV-05 | Phase 1 | Pending |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
