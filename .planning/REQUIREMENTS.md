@@ -110,51 +110,51 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| COMP-01 | — | Pending |
-| COMP-02 | — | Pending |
-| COMP-03 | — | Pending |
-| COMP-04 | — | Pending |
-| NAV-01 | — | Pending |
-| NAV-02 | — | Pending |
-| NAV-03 | — | Pending |
-| NAV-04 | — | Pending |
-| NAV-05 | — | Pending |
-| HERO-01 | — | Pending |
-| HERO-02 | — | Pending |
-| HERO-03 | — | Pending |
-| SERV-01 | — | Pending |
-| SERV-02 | — | Pending |
-| SERV-03 | — | Pending |
-| ABOUT-01 | — | Pending |
-| ABOUT-02 | — | Pending |
-| TEST-01 | — | Pending |
-| TEST-02 | — | Pending |
-| FAQ-01 | — | Pending |
-| FAQ-02 | — | Pending |
-| CALC-01 | — | Pending |
-| CALC-02 | — | Pending |
-| CALC-03 | — | Pending |
-| FORM-01 | — | Pending |
-| FORM-02 | — | Pending |
-| FORM-03 | — | Pending |
-| FORM-04 | — | Pending |
-| FORM-05 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
-| SEO-05 | — | Pending |
-| PERF-01 | — | Pending |
-| PERF-02 | — | Pending |
-| PERF-03 | — | Pending |
-| PERF-04 | — | Pending |
-| PERF-05 | — | Pending |
+| COMP-01 | Phase 1 | Pending |
+| COMP-02 | Phase 1 | Pending |
+| COMP-03 | Phase 1 | Pending |
+| COMP-04 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Pending |
+| NAV-02 | Phase 1 | Pending |
+| NAV-03 | Phase 1 | Pending |
+| NAV-04 | Phase 1 | Pending |
+| NAV-05 | Phase 1 | Pending |
+| HERO-01 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Pending |
+| HERO-03 | Phase 2 | Pending |
+| SERV-01 | Phase 2 | Pending |
+| SERV-02 | Phase 2 | Pending |
+| SERV-03 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Pending |
+| ABOUT-02 | Phase 2 | Pending |
+| TEST-01 | Phase 2 | Pending |
+| TEST-02 | Phase 2 | Pending |
+| FAQ-01 | Phase 3 | Pending |
+| FAQ-02 | Phase 3 | Pending |
+| CALC-01 | Phase 3 | Pending |
+| CALC-02 | Phase 3 | Pending |
+| CALC-03 | Phase 3 | Pending |
+| FORM-01 | Phase 3 | Pending |
+| FORM-02 | Phase 3 | Pending |
+| FORM-03 | Phase 3 | Pending |
+| FORM-04 | Phase 3 | Pending |
+| FORM-05 | Phase 3 | Pending |
+| SEO-01 | Phase 4 | Pending |
+| SEO-02 | Phase 4 | Pending |
+| SEO-03 | Phase 4 | Pending |
+| SEO-04 | Phase 4 | Pending |
+| SEO-05 | Phase 4 | Pending |
+| PERF-01 | Phase 5 | Pending |
+| PERF-02 | Phase 5 | Pending |
+| PERF-03 | Phase 5 | Pending |
+| PERF-04 | Phase 5 | Pending |
+| PERF-05 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 39 total
-- Mapped to phases: 0
-- Unmapped: 39 (pending roadmap creation)
+- Mapped to phases: 39
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-12*
-*Last updated: 2026-03-12 after initial definition*
+*Last updated: 2026-03-12 after roadmap creation*
