@@ -32,9 +32,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. The footer displays personal NMLS #2528620, company NMLS (Loan Factory #320841), Equal Housing Lender text, and the legal disclaimer about not being a commitment to lend
 **Plans:** 3/3 plans complete
 Plans:
-- [ ] 01-01-PLAN.md — Design system (navy/gold tokens), constants, SectionWrapper, page scaffolding, layout wiring
-- [ ] 01-02-PLAN.md — Sticky header with transparent-to-solid scroll, desktop nav, phone CTA, mobile hamburger menu
-- [ ] 01-03-PLAN.md — Footer with compliance disclosures (NMLS, Equal Housing, disclaimer), contact, social links
+- [x] 01-01-PLAN.md — Design system (navy/gold tokens), constants, SectionWrapper, page scaffolding, layout wiring
+- [x] 01-02-PLAN.md — Sticky header with transparent-to-solid scroll, desktop nav, phone CTA, mobile hamburger menu
+- [x] 01-03-PLAN.md — Footer with compliance disclosures (NMLS, Equal Housing, disclaimer), contact, social links
 
 ### Phase 2: Static Content Sections
 **Goal**: Visitors can read Prashanna's full professional story, see all loan products, and review client testimonials without any page load gaps
@@ -46,7 +46,10 @@ Plans:
   3. The services section shows all loan type cards (Conventional, FHA, VA, USDA, Jumbo, DSCR, Bank Statement, Foreign National, Refinancing, HELOC, Reverse Mortgage), each with a name, brief description, and who it is for
   4. Clicking a service card scrolls to the contact form and pre-selects that loan type
   5. The about section displays Prashanna's bio and a professional photo, and the testimonials section shows reviews each with client name format (first + last initial), context, and quote
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — Data constants (SERVICES, TESTIMONIALS arrays) + HeroSection + ServicesSection
+- [ ] 02-02-PLAN.md — AboutSection + TestimonialsSection + page.tsx assembly
 
 ### Phase 3: Interactive Sections
 **Goal**: Visitors can estimate their mortgage payment, get answers to common questions, and submit a lead via the contact form — with all submissions delivered to Prashanna's inbox
@@ -91,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Compliance | 3/3 | Complete   | 2026-03-12 |
-| 2. Static Content Sections | 0/TBD | Not started | - |
+| 2. Static Content Sections | 0/2 | In Progress | - |
 | 3. Interactive Sections | 0/TBD | Not started | - |
 | 4. SEO and Analytics | 0/TBD | Not started | - |
 | 5. Polish and Launch Validation | 0/TBD | Not started | - |
