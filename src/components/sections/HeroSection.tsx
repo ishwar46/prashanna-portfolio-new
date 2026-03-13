@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS } from "@/lib/constants";
 
@@ -24,9 +25,14 @@ export function HeroSection() {
           </a>
         </div>
         <div className="shrink-0 flex items-center justify-center">
-          <div className="flex size-56 items-center justify-center rounded-full border-4 border-gold-500/30 bg-navy-700 text-5xl font-bold text-gold-400 md:size-72 lg:size-80">
-            PS
-          </div>
+          <Image
+            src="/images/prashanna.png"
+            alt="Prashanna Sangroula — Mortgage Loan Officer"
+            width={320}
+            height={320}
+            priority
+            className="size-56 rounded-full border-4 border-gold-500/30 object-cover md:size-72 lg:size-80"
+          />
         </div>
       </div>
     </SectionWrapper>
