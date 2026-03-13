@@ -34,13 +34,13 @@
 
 ### About
 
-- [ ] **ABOUT-01**: About section with Prashanna's bio and story
-- [ ] **ABOUT-02**: Professional photo in about section
+- [x] **ABOUT-01**: About section with Prashanna's bio and story
+- [x] **ABOUT-02**: Professional photo in about section
 
 ### Testimonials
 
-- [ ] **TEST-01**: Testimonials section with client reviews
-- [ ] **TEST-02**: Each testimonial includes name (first + last initial), context, and quote
+- [x] **TEST-01**: Testimonials section with client reviews
+- [x] **TEST-02**: Each testimonial includes name (first + last initial), context, and quote
 
 ### FAQ
 
@@ -125,10 +125,10 @@
 | SERV-01 | Phase 2 | Complete |
 | SERV-02 | Phase 2 | Complete |
 | SERV-03 | Phase 2 | Complete |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
-| TEST-01 | Phase 2 | Pending |
-| TEST-02 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
+| TEST-01 | Phase 2 | Complete |
+| TEST-02 | Phase 2 | Complete |
 | FAQ-01 | Phase 3 | Pending |
 | FAQ-02 | Phase 3 | Pending |
 | CALC-01 | Phase 3 | Pending |
