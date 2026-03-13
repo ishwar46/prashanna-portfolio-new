@@ -48,7 +48,7 @@ Plans:
   5. The about section displays Prashanna's bio and a professional photo, and the testimonials section shows reviews each with client name format (first + last initial), context, and quote
 **Plans:** 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — Data constants (SERVICES, TESTIMONIALS arrays) + HeroSection + ServicesSection
+- [x] 02-01-PLAN.md — Data constants (SERVICES, TESTIMONIALS arrays) + HeroSection + ServicesSection
 - [ ] 02-02-PLAN.md — AboutSection + TestimonialsSection + page.tsx assembly
 
 ### Phase 3: Interactive Sections
@@ -94,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Compliance | 3/3 | Complete   | 2026-03-12 |
-| 2. Static Content Sections | 0/2 | In Progress | - |
+| 2. Static Content Sections | 1/2 | In Progress | - |
 | 3. Interactive Sections | 0/TBD | Not started | - |
 | 4. SEO and Analytics | 0/TBD | Not started | - |
 | 5. Polish and Launch Validation | 0/TBD | Not started | - |

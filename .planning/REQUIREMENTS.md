@@ -22,15 +22,15 @@
 
 ### Hero
 
-- [ ] **HERO-01**: Hero section with compelling headline and subtext
-- [ ] **HERO-02**: Primary CTA button ("Get a Free Consultation") linking to contact form
-- [ ] **HERO-03**: Professional headshot photo with optimized loading (LCP priority)
+- [x] **HERO-01**: Hero section with compelling headline and subtext
+- [x] **HERO-02**: Primary CTA button ("Get a Free Consultation") linking to contact form
+- [x] **HERO-03**: Professional headshot photo with optimized loading (LCP priority)
 
 ### Services
 
-- [ ] **SERV-01**: Services section displaying all loan types as cards
-- [ ] **SERV-02**: Each card has loan type name, brief description, and "who it's for"
-- [ ] **SERV-03**: Clicking a service card navigates to contact form with that service pre-selected
+- [x] **SERV-01**: Services section displaying all loan types as cards
+- [x] **SERV-02**: Each card has loan type name, brief description, and "who it's for"
+- [x] **SERV-03**: Clicking a service card navigates to contact form with that service pre-selected
 
 ### About
 
@@ -119,12 +119,12 @@
 | NAV-03 | Phase 1 | Complete |
 | NAV-04 | Phase 1 | Complete |
 | NAV-05 | Phase 1 | Complete |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| SERV-01 | Phase 2 | Pending |
-| SERV-02 | Phase 2 | Pending |
-| SERV-03 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| SERV-01 | Phase 2 | Complete |
+| SERV-02 | Phase 2 | Complete |
+| SERV-03 | Phase 2 | Complete |
 | ABOUT-01 | Phase 2 | Pending |
 | ABOUT-02 | Phase 2 | Pending |
 | TEST-01 | Phase 2 | Pending |
@@ -157,4 +157,4 @@
 
 ---
 *Requirements defined: 2026-03-12*
-*Last updated: 2026-03-12 after roadmap creation*
+*Last updated: 2026-03-13 after 02-01 completion*
