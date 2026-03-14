@@ -97,7 +97,7 @@ export function HeroSection() {
           <div className="absolute -left-3 top-4 bottom-4 w-[3px] rounded-full bg-linear-to-b from-gold-500/0 via-gold-500 to-gold-500/0 sm:-left-4" />
           <div className="relative">
             <Image
-              src="/images/prashanna.png"
+              src="/images/prashanna.webp"
               alt="Prashanna Sangroula — Mortgage Loan Officer & Realtor"
               width={380}
               height={460}
