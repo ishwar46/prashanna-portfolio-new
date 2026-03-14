@@ -13,7 +13,7 @@ A five-phase build that goes from a compliant structural shell to a fully optimi
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation and Compliance** - Layout shell, sticky header/footer, NMLS disclosures, and global styles (completed 2026-03-12)
-- [ ] **Phase 2: Static Content Sections** - Hero, About, Services, and Testimonials as Server Components
+- [x] **Phase 2: Static Content Sections** - Hero, About, Services, and Testimonials as Server Components (completed 2026-03-13)
 - [ ] **Phase 3: Interactive Sections** - Mortgage calculator, FAQ accordion, and contact form with email delivery
 - [ ] **Phase 4: SEO and Analytics** - Metadata, Open Graph, JSON-LD structured data, sitemap, and Vercel Analytics
 - [ ] **Phase 5: Polish and Launch Validation** - Performance audit, animation quality, accessibility, and mobile verification
@@ -49,7 +49,7 @@ Plans:
 **Plans:** 2 plans
 Plans:
 - [x] 02-01-PLAN.md — Data constants (SERVICES, TESTIMONIALS arrays) + HeroSection + ServicesSection
-- [ ] 02-02-PLAN.md — AboutSection + TestimonialsSection + page.tsx assembly
+- [x] 02-02-PLAN.md — AboutSection + TestimonialsSection + page.tsx assembly
 
 ### Phase 3: Interactive Sections
 **Goal**: Visitors can estimate their mortgage payment, get answers to common questions, and submit a lead via the contact form — with all submissions delivered to Prashanna's inbox
@@ -63,7 +63,7 @@ Plans:
   5. The form includes a hidden honeypot field invisible to real users
 **Plans:** 2 plans
 Plans:
-- [ ] 03-01-PLAN.md — Install deps, FAQ data constants, CalculatorSection, FAQSection
+- [x] 03-01-PLAN.md — Install deps, FAQ data constants, CalculatorSection, FAQSection
 - [ ] 03-02-PLAN.md — Contact form Server Action, email delivery, ContactSection, service pre-selection wiring, page assembly
 
 ### Phase 4: SEO and Analytics
@@ -97,7 +97,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Compliance | 3/3 | Complete   | 2026-03-12 |
-| 2. Static Content Sections | 1/2 | In Progress | - |
-| 3. Interactive Sections | 0/2 | Not started | - |
+| 2. Static Content Sections | 2/2 | Complete | 2026-03-13 |
+| 3. Interactive Sections | 1/2 | In Progress | - |
 | 4. SEO and Analytics | 0/TBD | Not started | - |
 | 5. Polish and Launch Validation | 0/TBD | Not started | - |

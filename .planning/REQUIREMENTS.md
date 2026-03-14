@@ -44,14 +44,14 @@
 
 ### FAQ
 
-- [ ] **FAQ-01**: FAQ section with accordion-style expandable answers
-- [ ] **FAQ-02**: Minimum 5 common loan process questions covered
+- [x] **FAQ-01**: FAQ section with accordion-style expandable answers
+- [x] **FAQ-02**: Minimum 5 common loan process questions covered
 
 ### Calculator
 
-- [ ] **CALC-01**: Interactive mortgage calculator with inputs for loan amount, interest rate, and term
-- [ ] **CALC-02**: Real-time monthly payment estimate (principal & interest)
-- [ ] **CALC-03**: Disclaimer text stating estimates only, not a commitment
+- [x] **CALC-01**: Interactive mortgage calculator with inputs for loan amount, interest rate, and term
+- [x] **CALC-02**: Real-time monthly payment estimate (principal & interest)
+- [x] **CALC-03**: Disclaimer text stating estimates only, not a commitment
 
 ### Contact Form
 
@@ -129,11 +129,11 @@
 | ABOUT-02 | Phase 2 | Complete |
 | TEST-01 | Phase 2 | Complete |
 | TEST-02 | Phase 2 | Complete |
-| FAQ-01 | Phase 3 | Pending |
-| FAQ-02 | Phase 3 | Pending |
-| CALC-01 | Phase 3 | Pending |
-| CALC-02 | Phase 3 | Pending |
-| CALC-03 | Phase 3 | Pending |
+| FAQ-01 | Phase 3 | Complete |
+| FAQ-02 | Phase 3 | Complete |
+| CALC-01 | Phase 3 | Complete |
+| CALC-02 | Phase 3 | Complete |
+| CALC-03 | Phase 3 | Complete |
 | FORM-01 | Phase 3 | Pending |
 | FORM-02 | Phase 3 | Pending |
 | FORM-03 | Phase 3 | Pending |
@@ -157,4 +157,4 @@
 
 ---
 *Requirements defined: 2026-03-12*
-*Last updated: 2026-03-13 after 02-01 completion*
+*Last updated: 2026-03-14 after 03-01 completion*
