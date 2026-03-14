@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section
       id={SECTION_IDS.hero}
-      className="relative overflow-hidden bg-navy-950 pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-0 md:pb-0"
+      className="relative overflow-hidden bg-navy-950 pt-32 pb-12 sm:pt-36 sm:pb-16 md:pt-32 md:pb-0"
     >
       {/* Layered background */}
       <div className="absolute inset-0">
@@ -30,7 +30,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 sm:gap-10 md:min-h-[calc(100svh-5rem)] md:flex-row md:items-center md:gap-16 lg:gap-20">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 sm:gap-10 md:flex-row md:items-center md:gap-16 md:py-16 lg:gap-20 lg:py-20">
         {/* Text column */}
         <div className="flex-1 text-center md:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
@@ -99,7 +99,7 @@ export function HeroSection() {
               width={380}
               height={460}
               priority
-              className="h-56 w-44 rounded-2xl object-cover object-top shadow-2xl shadow-navy-950/50 ring-1 ring-white/10 sm:h-72 sm:w-56 md:h-[380px] md:w-[300px] lg:h-[420px] lg:w-[340px]"
+              className="h-56 w-44 rounded-2xl object-cover object-top shadow-2xl shadow-navy-950/50 ring-1 ring-white/10 sm:h-72 sm:w-56 md:h-[360px] md:w-[270px] lg:h-[400px] lg:w-[300px]"
             />
 
             {/* Subtle overlay gradient at bottom */}
