@@ -3,15 +3,33 @@ export const CONTACT = {
   phoneHref: "tel:+15712225555",
   email: "prashanna@loanfactory.com",
   emailHref: "mailto:prashanna@loanfactory.com",
+  realEstatePhone: "(703) 321-6914",
+  realEstatePhoneHref: "tel:+17033216914",
+  realEstateEmail: "prashanna@onest.realestate",
+  realEstateEmailHref: "mailto:prashanna@onest.realestate",
+  office: "9697 Main St, Fairfax, VA 22031",
 } as const;
 
 export const COMPLIANCE = {
   personalNmls: "NMLS #2528620",
   companyNmls: "Loan Factory, Inc. NMLS #320841",
-  realEstateLicense: "VA Real Estate Agent LN0225273183",
+  realEstateLicense: "VA Real Estate License #225273183",
   equalHousing: "Equal Housing Lender",
   disclaimer:
     "Not a commitment to lend. Programs, rates, terms, and conditions are subject to change without notice. All loans subject to credit approval.",
+} as const;
+
+export const COMPANIES = {
+  loanFactory: {
+    name: "Loan Factory, Inc.",
+    role: "Mortgage Loan Officer",
+    lenders: "246+",
+  },
+  onest: {
+    name: "oNest Real Estate",
+    role: "Realtor & Real Estate Consultant",
+    office: "Fairfax, VA",
+  },
 } as const;
 
 export const NAV_ITEMS = [
@@ -26,7 +44,7 @@ export const NAV_ITEMS = [
 export const SOCIAL_LINKS = {
   instagram: "https://instagram.com/prashannasangroula",
   facebook: "https://facebook.com/prashannasangroula",
-  linkedin: "https://linkedin.com/in/prashannasangroula",
+  linkedin: "https://linkedin.com/in/prashanna-sangroula-64867563",
 } as const;
 
 export const SECTION_IDS = {
@@ -44,6 +62,7 @@ export interface Service {
   slug: string;
   description: string;
   audience: string;
+  category: "mortgage" | "real-estate";
 }
 
 export const SERVICES: Service[] = [
@@ -53,6 +72,7 @@ export const SERVICES: Service[] = [
     description:
       "Traditional financing with competitive rates and flexible terms for a wide range of property types.",
     audience: "Buyers with good credit and 3-20% down payment",
+    category: "mortgage",
   },
   {
     name: "FHA Loans",
@@ -60,6 +80,7 @@ export const SERVICES: Service[] = [
     description:
       "Government-backed loans with lower down payment and more flexible credit requirements to help you get into your first home.",
     audience: "First-time homebuyers and those with limited savings",
+    category: "mortgage",
   },
   {
     name: "VA Loans",
@@ -67,6 +88,7 @@ export const SERVICES: Service[] = [
     description:
       "Zero-down financing exclusively for eligible military service members, honoring your service with outstanding loan terms.",
     audience: "Active-duty military, veterans, and eligible spouses",
+    category: "mortgage",
   },
   {
     name: "USDA Loans",
@@ -74,6 +96,7 @@ export const SERVICES: Service[] = [
     description:
       "Zero-down mortgage options for homes in eligible rural and suburban areas across the country.",
     audience: "Buyers in qualifying rural and suburban locations",
+    category: "mortgage",
   },
   {
     name: "Jumbo Loans",
@@ -81,6 +104,7 @@ export const SERVICES: Service[] = [
     description:
       "Financing that exceeds conforming loan limits, designed for luxury and high-value property purchases.",
     audience: "Buyers purchasing high-value homes",
+    category: "mortgage",
   },
   {
     name: "DSCR Loans",
@@ -88,6 +112,7 @@ export const SERVICES: Service[] = [
     description:
       "Investment property loans qualified by the property's rental income rather than your personal income.",
     audience: "Real estate investors and landlords",
+    category: "mortgage",
   },
   {
     name: "Bank Statement Loans",
@@ -95,6 +120,7 @@ export const SERVICES: Service[] = [
     description:
       "Flexible qualification using bank statements instead of tax returns, built for self-employed professionals.",
     audience: "Self-employed professionals and business owners",
+    category: "mortgage",
   },
   {
     name: "Foreign National Loans",
@@ -102,6 +128,7 @@ export const SERVICES: Service[] = [
     description:
       "Home financing programs for non-US citizens purchasing property in the United States without a Social Security number.",
     audience: "Foreign nationals buying US property",
+    category: "mortgage",
   },
   {
     name: "Refinancing",
@@ -109,6 +136,7 @@ export const SERVICES: Service[] = [
     description:
       "Rate-and-term, cash-out, and streamline options to optimize your current mortgage and save money.",
     audience: "Homeowners seeking better rates or accessing equity",
+    category: "mortgage",
   },
   {
     name: "HELOC",
@@ -116,6 +144,7 @@ export const SERVICES: Service[] = [
     description:
       "A revolving line of credit secured by your home equity, giving you flexible access to funds when you need them.",
     audience: "Homeowners needing flexible access to funds",
+    category: "mortgage",
   },
   {
     name: "Reverse Mortgages",
@@ -123,6 +152,31 @@ export const SERVICES: Service[] = [
     description:
       "Convert your home equity into tax-free income without monthly mortgage payments, supplementing your retirement.",
     audience: "Homeowners age 62+ looking to supplement retirement income",
+    category: "mortgage",
+  },
+  {
+    name: "Buyer Representation",
+    slug: "buyer-representation",
+    description:
+      "Full-service buyer's agent representation in Virginia — from home search to closing, with expert negotiation and market insight.",
+    audience: "Homebuyers looking for properties in Virginia",
+    category: "real-estate",
+  },
+  {
+    name: "Seller Listing Services",
+    slug: "seller-listing",
+    description:
+      "Strategic property marketing, pricing analysis, and end-to-end listing management to sell your home for top value.",
+    audience: "Homeowners ready to sell in Virginia",
+    category: "real-estate",
+  },
+  {
+    name: "Real Estate Consulting",
+    slug: "real-estate-consulting",
+    description:
+      "Market analysis, investment guidance, and strategic advice for residential real estate decisions in the Virginia market.",
+    audience: "Investors and homeowners seeking expert guidance",
+    category: "real-estate",
   },
 ] as const;
 
@@ -193,5 +247,10 @@ export const FAQ_ITEMS: FAQItem[] = [
     question: "Can I get a mortgage if I am self-employed?",
     answer:
       "Absolutely. I specialize in Bank Statement and Asset-Qualifier loans designed specifically for self-employed borrowers. These programs use your bank deposits or assets instead of traditional tax returns to verify income.",
+  },
+  {
+    question: "Do you also help with buying or selling homes?",
+    answer:
+      "Yes. As a licensed Realtor with oNest Real Estate in Fairfax, VA, I provide full buyer and seller representation. Having one professional handle both your mortgage and real estate needs means a smoother, more coordinated experience from start to finish.",
   },
 ] as const;

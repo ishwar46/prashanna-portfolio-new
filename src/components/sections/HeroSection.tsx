@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SECTION_IDS, CONTACT, COMPLIANCE } from "@/lib/constants";
+import { SECTION_IDS, CONTACT, COMPLIANCE, COMPANIES } from "@/lib/constants";
 
 export function HeroSection() {
   return (
@@ -9,10 +9,7 @@ export function HeroSection() {
     >
       {/* Layered background */}
       <div className="absolute inset-0">
-        {/* Base gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-navy-900 via-navy-950 to-navy-900" />
-
-        {/* Dot grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.15]"
           style={{
@@ -21,11 +18,7 @@ export function HeroSection() {
             backgroundSize: "24px 24px",
           }}
         />
-
-        {/* Gold radial glow behind photo area */}
         <div className="absolute -right-32 top-1/2 hidden h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-gold-500/[0.04] blur-3xl md:block" />
-
-        {/* Subtle top-left glow */}
         <div className="absolute -left-20 -top-20 h-[400px] w-[400px] rounded-full bg-navy-700/20 blur-3xl" />
       </div>
 
@@ -33,9 +26,16 @@ export function HeroSection() {
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 sm:gap-10 md:flex-row md:items-center md:gap-16 md:py-16 lg:gap-20 lg:py-20">
         {/* Text column */}
         <div className="flex-1 text-center md:text-left">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
-            Mortgage Loan Officer
-          </p>
+          {/* Dual role kicker */}
+          <div className="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 md:justify-start">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
+              {COMPANIES.loanFactory.role}
+            </span>
+            <span className="hidden h-3 w-px bg-navy-600 sm:block" />
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-navy-400">
+              {COMPANIES.onest.role}
+            </span>
+          </div>
 
           <h1 className="mt-4 text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[3.5rem]">
             Your Home Journey
@@ -46,8 +46,8 @@ export function HeroSection() {
           <div className="mx-auto mt-5 h-px w-16 bg-linear-to-r from-gold-500 to-gold-500/0 md:mx-0" />
 
           <p className="mt-5 max-w-lg text-base leading-relaxed text-navy-300 sm:text-lg">
-            Expert mortgage guidance tailored to your goals. From first-time
-            buyers to seasoned investors, I&apos;ll find the right loan for you.
+            From finding your dream home to securing the perfect loan&mdash;I
+            handle both. One professional for your entire home buying journey.
           </p>
 
           {/* CTA row */}
@@ -77,32 +77,35 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Trust badge */}
-          <div className="mt-8 inline-flex items-center gap-3 rounded-full bg-navy-800/50 px-4 py-2 ring-1 ring-navy-700/50">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-            <span className="text-xs tracking-wide text-navy-400">
-              {COMPLIANCE.personalNmls} &middot; {COMPLIANCE.realEstateLicense}
-            </span>
+          {/* Trust badges — dual credentials */}
+          <div className="mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 md:items-start">
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
+              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+              <span className="text-[11px] tracking-wide text-navy-400">
+                {COMPLIANCE.personalNmls}
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
+              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+              <span className="text-[11px] tracking-wide text-navy-400">
+                {COMPLIANCE.realEstateLicense}
+              </span>
+            </div>
           </div>
         </div>
 
         {/* Photo column */}
         <div className="relative shrink-0">
-          {/* Gold accent line */}
           <div className="absolute -left-3 top-4 bottom-4 w-[3px] rounded-full bg-linear-to-b from-gold-500/0 via-gold-500 to-gold-500/0 sm:-left-4" />
-
-          {/* Photo */}
           <div className="relative">
             <Image
               src="/images/prashanna.png"
-              alt="Prashanna Sangroula — Mortgage Loan Officer"
+              alt="Prashanna Sangroula — Mortgage Loan Officer & Realtor"
               width={380}
               height={460}
               priority
               className="h-56 w-44 rounded-2xl object-cover object-top shadow-2xl shadow-navy-950/50 ring-1 ring-white/10 sm:h-72 sm:w-56 md:h-[360px] md:w-[270px] lg:h-[400px] lg:w-[300px]"
             />
-
-            {/* Subtle overlay gradient at bottom */}
             <div className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-t from-navy-950/30 to-transparent" />
           </div>
         </div>

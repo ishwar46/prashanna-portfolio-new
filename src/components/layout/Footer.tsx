@@ -1,6 +1,6 @@
-import { Facebook, Home, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Home, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
-import { COMPLIANCE, CONTACT, NAV_ITEMS, SOCIAL_LINKS } from "@/lib/constants";
+import { COMPLIANCE, COMPANIES, CONTACT, NAV_ITEMS, SOCIAL_LINKS } from "@/lib/constants";
 
 const FOOTER_NAV_LABELS = new Set(["Services", "About", "Calculator", "Contact"]);
 
@@ -23,11 +23,13 @@ export function Footer() {
             <h3 className="text-lg font-bold text-white">
               Prashanna Sangroula
             </h3>
-            <p className="mt-1 text-xs text-navy-400">
-              {COMPLIANCE.personalNmls}
-            </p>
-            <p className="mt-3 text-sm">Mortgage Loan Officer</p>
-            <p className="text-sm">Loan Factory, Inc.</p>
+            <div className="mt-3 space-y-1.5 text-sm">
+              <p>{COMPANIES.loanFactory.role}</p>
+              <p className="text-navy-400">{COMPANIES.loanFactory.name}</p>
+              <div className="h-px w-6 bg-navy-800" />
+              <p>{COMPANIES.onest.role}</p>
+              <p className="text-navy-400">{COMPANIES.onest.name}</p>
+            </div>
           </div>
 
           <div>
@@ -52,16 +54,29 @@ export function Footer() {
                 href={CONTACT.phoneHref}
                 className="flex items-center gap-2 text-sm text-navy-300 transition-colors hover:text-gold-400"
               >
-                <Phone className="size-4" />
+                <Phone className="size-4 shrink-0" />
                 {CONTACT.phone}
+                <span className="text-navy-500">Mortgage</span>
+              </a>
+              <a
+                href={CONTACT.realEstatePhoneHref}
+                className="flex items-center gap-2 text-sm text-navy-300 transition-colors hover:text-gold-400"
+              >
+                <Phone className="size-4 shrink-0" />
+                {CONTACT.realEstatePhone}
+                <span className="text-navy-500">Real Estate</span>
               </a>
               <a
                 href={CONTACT.emailHref}
                 className="flex items-center gap-2 text-sm text-navy-300 transition-colors hover:text-gold-400"
               >
-                <Mail className="size-4" />
+                <Mail className="size-4 shrink-0" />
                 {CONTACT.email}
               </a>
+              <div className="flex items-start gap-2 text-sm text-navy-400">
+                <MapPin className="size-4 shrink-0 mt-0.5" />
+                {CONTACT.office}
+              </div>
             </div>
           </div>
 
@@ -94,7 +109,6 @@ export function Footer() {
             </span>
             <span>{COMPLIANCE.personalNmls}</span>
             <span>{COMPLIANCE.realEstateLicense}</span>
-            <span>{COMPLIANCE.companyNmls}</span>
           </div>
 
           <p className="mt-3 text-center text-xs leading-relaxed text-navy-500">

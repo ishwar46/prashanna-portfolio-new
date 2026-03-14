@@ -1,7 +1,25 @@
+"use client";
+
+import { useState } from "react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS, SERVICES } from "@/lib/constants";
 
+type Category = "all" | "mortgage" | "real-estate";
+
+const TABS: { label: string; value: Category }[] = [
+  { label: "All Services", value: "all" },
+  { label: "Mortgage", value: "mortgage" },
+  { label: "Real Estate", value: "real-estate" },
+];
+
 export function ServicesSection() {
+  const [activeTab, setActiveTab] = useState<Category>("all");
+
+  const filtered =
+    activeTab === "all"
+      ? SERVICES
+      : SERVICES.filter((s) => s.category === activeTab);
+
   return (
     <SectionWrapper id={SECTION_IDS.services} alternate>
       <div className="text-center">
@@ -9,15 +27,36 @@ export function ServicesSection() {
           What I Offer
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
-          Loan Programs
+          Services
         </h2>
         <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
-          Explore the right financing option for your situation
+          Mortgage lending and real estate — one professional for your entire
+          home journey
         </p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {SERVICES.map((service, index) => (
+      {/* Category tabs */}
+      <div className="mt-8 flex justify-center">
+        <div className="inline-flex gap-1 rounded-xl bg-navy-900/5 p-1 ring-1 ring-border">
+          {TABS.map((tab) => (
+            <button
+              key={tab.value}
+              type="button"
+              onClick={() => setActiveTab(tab.value)}
+              className={`rounded-lg px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all sm:px-5 sm:text-sm ${
+                activeTab === tab.value
+                  ? "bg-navy-900 text-white shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {filtered.map((service, index) => (
           <a
             key={service.slug}
             href={`?service=${service.slug}#contact`}
@@ -29,8 +68,19 @@ export function ServicesSection() {
               {String(index + 1).padStart(2, "0")}
             </span>
 
+            {/* Category badge */}
+            <span
+              className={`inline-flex w-fit rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
+                service.category === "real-estate"
+                  ? "bg-navy-900/5 text-navy-600"
+                  : "bg-gold-500/10 text-gold-700"
+              }`}
+            >
+              {service.category === "real-estate" ? "Real Estate" : "Mortgage"}
+            </span>
+
             {/* Content */}
-            <div className="relative">
+            <div className="relative mt-3">
               <h3 className="text-base font-bold text-foreground transition-colors duration-300 group-hover:text-navy-900 sm:text-lg">
                 {service.name}
               </h3>

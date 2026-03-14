@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import { SECTION_IDS } from "@/lib/constants";
+import { SECTION_IDS, COMPANIES } from "@/lib/constants";
 
 const STATS = [
   { value: "12", label: "States Licensed" },
-  { value: "11", label: "Loan Programs" },
+  { value: "246+", label: "Lenders" },
   { value: "4", label: "Languages" },
 ] as const;
 
@@ -24,7 +24,6 @@ export function AboutSection() {
       <div className="mt-8 sm:mt-12 md:grid md:grid-cols-12 md:gap-10 lg:gap-14">
         {/* Left column — Photo + Stats card */}
         <div className="flex flex-col items-center md:col-span-5 md:items-start">
-          {/* Photo with overlapping stats card */}
           <div className="relative w-full max-w-xs md:max-w-none">
             <Image
               src="/images/prashanna.png"
@@ -36,7 +35,6 @@ export function AboutSection() {
 
             {/* Stats card — overlaps bottom of photo */}
             <div className="relative z-20 -mt-10 mx-4 rounded-xl bg-navy-900 p-4 shadow-lg sm:mx-8 sm:p-5 md:mx-0 md:-mt-14">
-              {/* Subtle line pattern */}
               <div
                 className="pointer-events-none absolute inset-0 rounded-xl opacity-[0.06]"
                 style={{
@@ -49,9 +47,7 @@ export function AboutSection() {
               <div className="relative flex justify-around text-center">
                 {STATS.map((stat, i) => (
                   <div key={stat.label} className="flex items-center gap-3 sm:gap-4">
-                    {i > 0 && (
-                      <div className="h-8 w-px bg-navy-700" />
-                    )}
+                    {i > 0 && <div className="h-8 w-px bg-navy-700" />}
                     <div>
                       <div className="text-2xl font-bold text-gold-400 sm:text-3xl">
                         {stat.value}
@@ -64,6 +60,32 @@ export function AboutSection() {
                 ))}
               </div>
             </div>
+
+            {/* Dual role badges below stats */}
+            <div className="mt-4 flex flex-col gap-2 px-4 sm:px-8 md:px-0">
+              <div className="flex items-center gap-3 rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
+                <span className="h-2 w-2 shrink-0 rounded-full bg-gold-500" />
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold text-foreground">
+                    {COMPANIES.loanFactory.role}
+                  </p>
+                  <p className="truncate text-[11px] text-muted-foreground">
+                    {COMPANIES.loanFactory.name}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
+                <span className="h-2 w-2 shrink-0 rounded-full bg-navy-500" />
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold text-foreground">
+                    {COMPANIES.onest.role}
+                  </p>
+                  <p className="truncate text-[11px] text-muted-foreground">
+                    {COMPANIES.onest.name} &middot; {COMPANIES.onest.office}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -72,14 +94,17 @@ export function AboutSection() {
           <div className="space-y-5">
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
               Helping people achieve homeownership is more than a career for
-              me&mdash;it&apos;s a calling. As a Loan Officer at Loan Factory,
-              Inc.&apos;s{" "}
+              me&mdash;it&apos;s a calling. As a{" "}
               <span className="font-medium text-foreground">
-                VA-Fairfax branch
-              </span>
-              , I&apos;m committed to personalized service and passionate about
-              guiding clients through the biggest financial decision of their
-              lives.
+                Mortgage Loan Officer
+              </span>{" "}
+              at Loan Factory, Inc. and a{" "}
+              <span className="font-medium text-foreground">
+                licensed Realtor
+              </span>{" "}
+              with oNest Real Estate in Fairfax, VA, I offer something
+              rare&mdash;one professional who handles both your home search and
+              your financing.
             </p>
 
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
@@ -89,8 +114,12 @@ export function AboutSection() {
               </span>
               &mdash;Virginia, DC, Florida, Georgia, Kentucky, Massachusetts,
               Maryland, North Carolina, New Hampshire, Ohio, Pennsylvania, and
-              Washington&mdash;I offer broad expertise and flexibility to serve
-              clients across the country.
+              Washington&mdash;with access to{" "}
+              <span className="font-medium text-foreground">
+                246+ lenders
+              </span>{" "}
+              through Loan Factory&apos;s platform, I find the best rates and
+              terms across a massive network.
             </p>
 
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
@@ -98,14 +127,13 @@ export function AboutSection() {
               <span className="font-medium text-foreground">
                 English, Hindi, Nepali, and Urdu
               </span>
-              , I&apos;m dedicated to supporting our diverse community. Through
-              our company, I can also assist with real estate services in
-              Virginia, ensuring a seamless experience for clients seeking both
-              mortgage and real estate guidance.
+              , I&apos;m dedicated to supporting our diverse community. Whether
+              you&apos;re buying your first home, investing in property, or
+              refinancing&mdash;I coordinate the entire process from house
+              hunting to closing day.
             </p>
           </div>
 
-          {/* Gold divider + CTA */}
           <div className="mt-6 h-px w-12 bg-gold-500/60 sm:mt-8" />
           <a
             href="#contact"

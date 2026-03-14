@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { useSearchParams } from "next/navigation";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { submitContact } from "@/app/actions/contact";
-import { CONTACT, COMPLIANCE, SECTION_IDS, SERVICES } from "@/lib/constants";
+import { CONTACT, COMPLIANCE, COMPANIES, SECTION_IDS, SERVICES } from "@/lib/constants";
 import type { ContactState } from "@/app/actions/contact";
 
 const inputClasses =
@@ -212,30 +212,21 @@ export function ContactSection() {
               }}
             />
 
-            <div className="relative space-y-6">
-              {/* Direct contact */}
+            <div className="relative space-y-5">
+              {/* Mortgage contact */}
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-navy-400">
-                  Call Directly
+                <p className="text-xs font-semibold uppercase tracking-wider text-gold-500">
+                  {COMPANIES.loanFactory.role}
                 </p>
                 <a
                   href={CONTACT.phoneHref}
-                  className="mt-2 block text-xl font-bold text-white transition-colors hover:text-gold-400 sm:text-2xl"
+                  className="mt-2 block text-lg font-bold text-white transition-colors hover:text-gold-400 sm:text-xl"
                 >
                   {CONTACT.phone}
                 </a>
-              </div>
-
-              <div className="h-px bg-navy-700/50" />
-
-              {/* Email */}
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-navy-400">
-                  Email
-                </p>
                 <a
                   href={CONTACT.emailHref}
-                  className="mt-2 block text-sm font-medium text-navy-200 transition-colors hover:text-gold-400"
+                  className="mt-1 block text-sm text-navy-300 transition-colors hover:text-gold-400"
                 >
                   {CONTACT.email}
                 </a>
@@ -243,16 +234,38 @@ export function ContactSection() {
 
               <div className="h-px bg-navy-700/50" />
 
-              {/* Credentials */}
+              {/* Real estate contact */}
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-navy-400">
-                  Credentials
+                  {COMPANIES.onest.role}
                 </p>
-                <div className="mt-2 space-y-1.5">
-                  <p className="text-sm text-navy-300">
+                <a
+                  href={CONTACT.realEstatePhoneHref}
+                  className="mt-2 block text-lg font-bold text-white transition-colors hover:text-gold-400 sm:text-xl"
+                >
+                  {CONTACT.realEstatePhone}
+                </a>
+                <a
+                  href={CONTACT.realEstateEmailHref}
+                  className="mt-1 block text-sm text-navy-300 transition-colors hover:text-gold-400"
+                >
+                  {CONTACT.realEstateEmail}
+                </a>
+              </div>
+
+              <div className="h-px bg-navy-700/50" />
+
+              {/* Office & Credentials */}
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-navy-400">
+                  Office
+                </p>
+                <p className="mt-2 text-sm text-navy-300">{CONTACT.office}</p>
+                <div className="mt-3 space-y-1">
+                  <p className="text-xs text-navy-500">
                     {COMPLIANCE.personalNmls}
                   </p>
-                  <p className="text-sm text-navy-300">
+                  <p className="text-xs text-navy-500">
                     {COMPLIANCE.realEstateLicense}
                   </p>
                 </div>
