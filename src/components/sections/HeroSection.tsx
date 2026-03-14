@@ -81,7 +81,7 @@ export function HeroSection() {
           <div className="mt-8 inline-flex items-center gap-3 rounded-full bg-navy-800/50 px-4 py-2 ring-1 ring-navy-700/50">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             <span className="text-xs tracking-wide text-navy-400">
-              {COMPLIANCE.personalNmls} &middot; Loan Factory, Inc.
+              {COMPLIANCE.personalNmls} &middot; {COMPLIANCE.realEstateLicense}
             </span>
           </div>
         </div>

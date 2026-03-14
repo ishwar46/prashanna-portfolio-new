@@ -8,6 +8,7 @@ export const CONTACT = {
 export const COMPLIANCE = {
   personalNmls: "NMLS #2528620",
   companyNmls: "Loan Factory, Inc. NMLS #320841",
+  realEstateLicense: "VA Real Estate Agent LN0225273183",
   equalHousing: "Equal Housing Lender",
   disclaimer:
     "Not a commitment to lend. Programs, rates, terms, and conditions are subject to change without notice. All loans subject to credit approval.",

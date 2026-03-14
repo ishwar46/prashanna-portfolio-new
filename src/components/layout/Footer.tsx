@@ -93,6 +93,7 @@ export function Footer() {
               {COMPLIANCE.equalHousing}
             </span>
             <span>{COMPLIANCE.personalNmls}</span>
+            <span>{COMPLIANCE.realEstateLicense}</span>
             <span>{COMPLIANCE.companyNmls}</span>
           </div>
 
