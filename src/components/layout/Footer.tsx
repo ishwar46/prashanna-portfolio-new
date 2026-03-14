@@ -63,27 +63,21 @@ export function Footer() {
               </h3>
 
               <div className="mt-4 space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
-                  <div>
-                    <p className="text-sm font-medium text-navy-200">
-                      {COMPANIES.loanFactory.role}
-                    </p>
-                    <p className="text-xs text-navy-500">
-                      {COMPANIES.loanFactory.name}
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-sm font-medium text-navy-200">
+                    {COMPANIES.loanFactory.role}
+                  </p>
+                  <p className="text-xs text-navy-500">
+                    {COMPANIES.loanFactory.name}
+                  </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-navy-500" />
-                  <div>
-                    <p className="text-sm font-medium text-navy-200">
-                      {COMPANIES.onest.role}
-                    </p>
-                    <p className="text-xs text-navy-500">
-                      {COMPANIES.onest.name}
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-sm font-medium text-navy-200">
+                    {COMPANIES.onest.role}
+                  </p>
+                  <p className="text-xs text-navy-500">
+                    {COMPANIES.onest.name}
+                  </p>
                 </div>
               </div>
 

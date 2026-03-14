@@ -79,15 +79,13 @@ export function HeroSection() {
 
           {/* Trust badges — dual credentials */}
           <div className="mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 md:items-start">
-            <div className="inline-flex items-center gap-2.5 rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-              <span className="text-[11px] tracking-wide text-navy-400">
+            <div className="inline-flex items-center rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
+              <span className="text-[11px] font-medium tracking-wide text-navy-200">
                 {COMPLIANCE.personalNmls}
               </span>
             </div>
-            <div className="inline-flex items-center gap-2.5 rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-              <span className="text-[11px] tracking-wide text-navy-400">
+            <div className="inline-flex items-center rounded-full bg-navy-800/50 px-3.5 py-1.5 ring-1 ring-navy-700/50">
+              <span className="text-[11px] font-medium tracking-wide text-navy-200">
                 {COMPLIANCE.realEstateLicense}
               </span>
             </div>
