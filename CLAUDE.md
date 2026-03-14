@@ -4,22 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website for **Prashanna Sangroula**, a Mortgage Loan Officer (NMLS #2528620) currently at Loan Factory, Inc. This is his standalone professional website — separate from his Loan Factory profile at loanfactory.com/prashannasangroula.
+Professional portfolio website for **Prashanna Sangroula** — a **Mortgage Loan Officer** (NMLS #2528620) at Loan Factory, Inc. and a **licensed Realtor** (VA License #225273183) at oNest Real Estate, Fairfax, VA.
 
 ### About Prashanna
 
-- **Role:** Mortgage Loan Officer
-- **Phone:** (571) 222-5555
-- **Email:** prashanna@loanfactory.com
-- **Company:** Loan Factory, Inc. (NMLS #320841), San Jose, CA
-- **Specializations:** Conventional, FHA, VA, USDA, Jumbo loans, Bank Statement/Asset-Qualifier loans, DSCR (investor) loans, Foreign National programs, Refinancing (rate/term, cash-out, streamline), HELOC, Reverse Mortgages
+- **Roles:** Mortgage Loan Officer + Realtor & Real Estate Consultant
+- **Mortgage Phone:** (571) 222-5555
+- **Real Estate Phone:** (703) 321-6914
+- **Mortgage Email:** prashanna@loanfactory.com
+- **Real Estate Email:** prashanna@onest.realestate
+- **Companies:** Loan Factory, Inc. (NMLS #320841) + oNest Real Estate (Fairfax, VA)
+- **Office:** 9697 Main St, Fairfax, VA 22031
+- **Licensed States:** VA, DC, FL, GA, KY, MA, MD, NC, NH, OH, PA, WA
+- **Languages:** English, Hindi, Nepali, Urdu
+- **Specializations:** Conventional, FHA, VA, USDA, Jumbo, DSCR, Bank Statement, Foreign National, Refinancing, HELOC, Reverse Mortgages + Buyer/Seller Representation, Real Estate Consulting
 
 ### Website Goals
 
-- Professional personal brand separate from Loan Factory
-- Showcase loan services, expertise, and client testimonials
-- Provide easy contact/consultation booking for potential borrowers
-- Build trust and credibility as an independent loan officer
+- Professional personal brand showcasing dual role (mortgage + real estate)
+- Showcase 14 services (11 mortgage + 3 real estate) with category filtering
+- Provide easy contact/consultation booking for potential clients
+- Build trust and credibility as a one-stop home journey professional
 
 ## Tech Stack
 
