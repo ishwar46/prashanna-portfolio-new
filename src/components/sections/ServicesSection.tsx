@@ -16,7 +16,7 @@ export function ServicesSection() {
         {SERVICES.map((service) => (
           <a
             key={service.slug}
-            href="#contact"
+            href={`?service=${service.slug}#contact`}
             data-service={service.slug}
             className="group block rounded-xl border border-border border-t-4 border-t-gold-500 bg-card p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
           >
