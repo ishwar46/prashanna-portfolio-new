@@ -90,7 +90,10 @@ Plans:
   2. Scroll-triggered animations play once on entry and do not replay on scroll-back; on a device with prefers-reduced-motion enabled, animations are suppressed
   3. Measured LCP is below 2.5 seconds and CLS is below 0.1 on a simulated mobile connection in Lighthouse or PageSpeed Insights
   4. Every section of the page is usable on a 375px-wide viewport with no horizontal scrolling and all tap targets are adequately sized
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 05-01-PLAN.md — Scroll animations (AnimatedSection + MotionConfig), favicon generation, image optimization audit
+- [ ] 05-02-PLAN.md — Build verification, mobile 375px audit, Core Web Vitals validation, launch readiness checkpoint
 
 ## Progress
 
@@ -103,4 +106,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Static Content Sections | 2/2 | Complete | 2026-03-13 |
 | 3. Interactive Sections | 2/2 | Complete | 2026-03-14 |
 | 4. SEO and Analytics | 1/2 | In Progress|  |
-| 5. Polish and Launch Validation | 0/TBD | Not started | - |
+| 5. Polish and Launch Validation | 0/2 | Not started | - |
