@@ -151,3 +151,46 @@ export const TESTIMONIALS: Testimonial[] = [
       "I reached out to Prashanna about refinancing and he responded the same day. He found me a significantly lower rate and walked me through the cash-out process clearly. The savings have been real, and I only wish I'd called him sooner.",
   },
 ] as const;
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export const FAQ_ITEMS: FAQItem[] = [
+  {
+    question: "What documents do I need to get started?",
+    answer:
+      "Typically you will need recent pay stubs, W-2s or tax returns from the last two years, bank statements, and a valid ID. I will provide a personalized checklist based on your loan type so nothing gets missed.",
+  },
+  {
+    question: "How long does the mortgage process take?",
+    answer:
+      "Most loans close within 30 to 45 days from application to funding. Timelines can vary based on the loan program and how quickly documentation is provided. I keep the process moving and update you at every milestone.",
+  },
+  {
+    question: "What credit score do I need to qualify?",
+    answer:
+      "Requirements vary by program. Conventional loans typically start at 620, FHA loans at 580, and VA loans have no set minimum. I work with a range of programs and can help you find the best fit for your current credit profile.",
+  },
+  {
+    question: "What is pre-approval and why does it matter?",
+    answer:
+      "Pre-approval means a lender has reviewed your finances and confirmed how much you can borrow. It shows sellers you are a serious, qualified buyer and can give you a significant edge in competitive markets.",
+  },
+  {
+    question: "How much down payment do I need?",
+    answer:
+      "It depends on the loan program. Conventional loans can go as low as 3 percent down, FHA requires 3.5 percent, and VA and USDA loans offer zero-down options. I will help you understand what works best for your budget.",
+  },
+  {
+    question: "What are closing costs?",
+    answer:
+      "Closing costs include fees for the appraisal, title insurance, lender origination, and other services. They typically range from 2 to 5 percent of the loan amount. I will walk you through every line item so there are no surprises.",
+  },
+  {
+    question: "Can I get a mortgage if I am self-employed?",
+    answer:
+      "Absolutely. I specialize in Bank Statement and Asset-Qualifier loans designed specifically for self-employed borrowers. These programs use your bank deposits or assets instead of traditional tax returns to verify income.",
+  },
+] as const;
