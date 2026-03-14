@@ -6,7 +6,7 @@ export function TestimonialsSection() {
   return (
     <SectionWrapper id={SECTION_IDS.testimonials} alternate>
       <div className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-800">
           Client Stories
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
@@ -66,7 +66,7 @@ export function TestimonialsSection() {
           href={GOOGLE_REVIEWS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-600"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-800"
         >
           View More Reviews on Google
           <svg

@@ -23,7 +23,7 @@ export function ContactSection() {
   return (
     <SectionWrapper id={SECTION_IDS.contact}>
       <div className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-800">
           Let&apos;s Talk
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
@@ -53,7 +53,7 @@ export function ContactSection() {
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
-                    className="h-6 w-6 text-gold-600"
+                    className="h-6 w-6 text-gold-800"
                   >
                     <path d="M20 6L9 17l-5-5" />
                   </svg>

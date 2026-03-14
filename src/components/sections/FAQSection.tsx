@@ -12,7 +12,7 @@ export function FAQSection() {
   return (
     <SectionWrapper id={SECTION_IDS.faq} alternate>
       <div className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-800">
           Answers
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">

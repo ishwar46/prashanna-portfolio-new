@@ -67,7 +67,7 @@ export function Footer() {
                   <p className="text-sm font-medium text-navy-200">
                     {COMPANIES.loanFactory.role}
                   </p>
-                  <p className="text-xs text-navy-500">
+                  <p className="text-xs text-navy-400">
                     {COMPANIES.loanFactory.name}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export function Footer() {
                   <p className="text-sm font-medium text-navy-200">
                     {COMPANIES.onest.role}
                   </p>
-                  <p className="text-xs text-navy-500">
+                  <p className="text-xs text-navy-400">
                     {COMPANIES.onest.name}
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export function Footer() {
 
             {/* Quick Links */}
             <div className="lg:col-span-2">
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-navy-400">
                 Navigate
               </p>
               <nav className="mt-4 flex flex-col gap-2.5">
@@ -126,7 +126,7 @@ export function Footer() {
 
             {/* Mortgage Contact */}
             <div className="lg:col-span-3">
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-navy-400">
                 Mortgage
               </p>
               <div className="mt-4 space-y-2.5">
@@ -134,21 +134,21 @@ export function Footer() {
                   href={CONTACT.phoneHref}
                   className="flex items-center gap-2.5 text-sm transition-colors hover:text-gold-400"
                 >
-                  <Phone className="size-3.5 shrink-0 text-navy-500" />
+                  <Phone className="size-3.5 shrink-0 text-navy-400" />
                   {CONTACT.phone}
                 </a>
                 <a
                   href={CONTACT.emailHref}
                   className="flex items-center gap-2.5 text-sm transition-colors hover:text-gold-400"
                 >
-                  <Mail className="size-3.5 shrink-0 text-navy-500" />
+                  <Mail className="size-3.5 shrink-0 text-navy-400" />
                   {CONTACT.email}
                 </a>
               </div>
 
               <div className="my-4 h-px w-8 bg-navy-800" />
 
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-navy-400">
                 Real Estate
               </p>
               <div className="mt-4 space-y-2.5">
@@ -156,14 +156,14 @@ export function Footer() {
                   href={CONTACT.realEstatePhoneHref}
                   className="flex items-center gap-2.5 text-sm transition-colors hover:text-gold-400"
                 >
-                  <Phone className="size-3.5 shrink-0 text-navy-500" />
+                  <Phone className="size-3.5 shrink-0 text-navy-400" />
                   {CONTACT.realEstatePhone}
                 </a>
                 <a
                   href={CONTACT.realEstateEmailHref}
                   className="flex items-center gap-2.5 text-sm transition-colors hover:text-gold-400"
                 >
-                  <Mail className="size-3.5 shrink-0 text-navy-500" />
+                  <Mail className="size-3.5 shrink-0 text-navy-400" />
                   {CONTACT.realEstateEmail}
                 </a>
               </div>
@@ -171,17 +171,17 @@ export function Footer() {
 
             {/* Office */}
             <div className="lg:col-span-3">
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-navy-400">
                 Office
               </p>
               <div className="mt-4 flex items-start gap-2.5">
-                <MapPin className="mt-0.5 size-3.5 shrink-0 text-navy-500" />
+                <MapPin className="mt-0.5 size-3.5 shrink-0 text-navy-400" />
                 <p className="text-sm leading-relaxed">{CONTACT.office}</p>
               </div>
 
               <div className="my-4 h-px w-8 bg-navy-800" />
 
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-navy-400">
                 Credentials
               </p>
               <div className="mt-4 space-y-1.5">
@@ -199,7 +199,7 @@ export function Footer() {
         {/* Compliance bar */}
         <div className="border-t border-navy-800/60">
           <div className="mx-auto max-w-6xl px-4 py-6">
-            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[11px] text-navy-500 sm:gap-x-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[11px] text-navy-400 sm:gap-x-4">
               <span className="flex items-center gap-1.5">
                 <Home className="size-3" />
                 {COMPLIANCE.equalHousing}
@@ -210,11 +210,11 @@ export function Footer() {
               <span>{COMPLIANCE.realEstateLicense}</span>
             </div>
 
-            <p className="mx-auto mt-3 max-w-2xl text-center text-[11px] leading-relaxed text-navy-600">
+            <p className="mx-auto mt-3 max-w-2xl text-center text-[11px] leading-relaxed text-navy-400">
               {COMPLIANCE.disclaimer}
             </p>
 
-            <p className="mt-4 text-center text-[11px] text-navy-600">
+            <p className="mt-4 text-center text-[11px] text-navy-400">
               &copy; {new Date().getFullYear()} Prashanna Sangroula. All rights
               reserved.
             </p>

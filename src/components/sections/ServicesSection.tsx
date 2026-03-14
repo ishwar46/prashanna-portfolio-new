@@ -40,7 +40,7 @@ export function ServicesSection() {
   return (
     <SectionWrapper id={SECTION_IDS.services} alternate>
       <div className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-800">
           What I Offer
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
@@ -63,7 +63,7 @@ export function ServicesSection() {
               className={`rounded-lg px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all sm:px-5 sm:text-sm ${
                 activeTab === tab.value
                   ? "bg-navy-900 text-white shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-foreground/70 hover:text-foreground"
               }`}
             >
               {tab.label}

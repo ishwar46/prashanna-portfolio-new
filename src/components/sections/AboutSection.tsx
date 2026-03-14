@@ -14,7 +14,7 @@ export function AboutSection() {
     <SectionWrapper id={SECTION_IDS.about}>
       {/* Section header */}
       <div className="text-center md:text-left">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-800">
           Who I Am
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
@@ -132,7 +132,7 @@ export function AboutSection() {
           <div className="mt-6 h-px w-12 bg-gold-500/60 sm:mt-8" />
           <a
             href="#contact"
-            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-600 sm:mt-6"
+            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-800 sm:mt-6"
           >
             Work with me
             <svg
