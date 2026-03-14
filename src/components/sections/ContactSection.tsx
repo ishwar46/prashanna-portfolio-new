@@ -2,7 +2,7 @@
 
 import { useActionState } from "react";
 import { useSearchParams } from "next/navigation";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { submitContact } from "@/app/actions/contact";
 import { CONTACT, COMPLIANCE, COMPANIES, SECTION_IDS, SERVICES } from "@/lib/constants";
@@ -35,7 +35,7 @@ export function ContactSection() {
         </p>
       </div>
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}
@@ -290,7 +290,7 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </m.div>
     </SectionWrapper>
   );
 }

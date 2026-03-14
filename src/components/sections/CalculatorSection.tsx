@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS } from "@/lib/constants";
 
@@ -69,7 +69,7 @@ export function CalculatorSection() {
         </p>
       </div>
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}
@@ -214,7 +214,7 @@ export function CalculatorSection() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </m.div>
 
       <p className="mx-auto mt-5 max-w-xl text-center text-xs leading-relaxed text-muted-foreground">
         This calculator provides estimates only and does not constitute a

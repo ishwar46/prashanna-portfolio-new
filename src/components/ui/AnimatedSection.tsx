@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ export function AnimatedSection({
   delay = 0,
 }: AnimatedSectionProps) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
@@ -22,6 +22,6 @@ export function AnimatedSection({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS, SERVICES } from "@/lib/constants";
 
@@ -72,7 +72,7 @@ export function ServicesSection() {
         </div>
       </div>
 
-      <motion.div
+      <m.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -80,7 +80,7 @@ export function ServicesSection() {
         className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5 md:grid-cols-2 lg:grid-cols-3"
       >
         {filtered.map((service, index) => (
-          <motion.a
+          <m.a
             variants={itemVariants}
             key={service.slug}
             href={`?service=${service.slug}#contact`}
@@ -119,9 +119,9 @@ export function ServicesSection() {
                 {service.audience}
               </p>
             </div>
-          </motion.a>
+          </m.a>
         ))}
-      </motion.div>
+      </m.div>
     </SectionWrapper>
   );
 }
