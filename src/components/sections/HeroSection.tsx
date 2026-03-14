@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section
       id={SECTION_IDS.hero}
-      className="relative overflow-hidden bg-navy-950 pt-32 pb-12 sm:pt-36 sm:pb-16 md:pt-32 md:pb-0"
+      className="relative overflow-hidden bg-navy-950 pt-32 pb-16 sm:pt-36 sm:pb-20 md:pt-32 md:pb-16"
     >
       {/* Layered background */}
       <div className="absolute inset-0">
