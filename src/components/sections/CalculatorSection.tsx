@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import { buttonVariants } from "@/components/ui/button";
 import { SECTION_IDS } from "@/lib/constants";
 
 function formatCurrency(value: number): string {
@@ -52,116 +51,169 @@ export function CalculatorSection() {
     return calculateMonthlyPayment(principal, rate, loanTerm);
   }, [loanAmount, interestRate, loanTerm]);
 
+  const totalPayment = monthlyPayment * loanTerm * 12;
+  const totalInterest = totalPayment - stripNonNumeric(loanAmount);
+
   return (
     <SectionWrapper id={SECTION_IDS.calculator}>
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-foreground md:text-4xl">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-600">
+          Estimate
+        </p>
+        <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">
           Mortgage Calculator
         </h2>
-        <p className="mt-3 text-lg text-muted-foreground">
+        <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
           Estimate your monthly payment in seconds
         </p>
       </div>
 
-      <div className="mx-auto mt-8 max-w-xl rounded-xl border border-border bg-card p-4 shadow-sm sm:mt-12 sm:p-6 md:p-8">
-        <div className="space-y-5">
-          <div>
-            <label
-              htmlFor="loan-amount"
-              className="block text-sm font-medium text-foreground"
-            >
-              Loan Amount
-            </label>
-            <div className="relative mt-1.5">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
-                $
-              </span>
-              <input
-                id="loan-amount"
-                type="text"
-                inputMode="numeric"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value.replace(/[^0-9,]/g, ""))}
-                onBlur={() => setLoanAmount(formatWithCommas(loanAmount))}
-                className="h-10 w-full rounded-lg border border-input bg-background pl-7 pr-3 text-foreground outline-none transition-colors focus:border-ring focus:ring-2 focus:ring-ring/50"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label
-              htmlFor="interest-rate"
-              className="block text-sm font-medium text-foreground"
-            >
-              Interest Rate
-            </label>
-            <div className="relative mt-1.5">
-              <input
-                id="interest-rate"
-                type="text"
-                inputMode="decimal"
-                value={interestRate}
-                onChange={(e) =>
-                  setInterestRate(e.target.value.replace(/[^0-9.]/g, ""))
-                }
-                className="h-10 w-full rounded-lg border border-input bg-background pl-3 pr-8 text-foreground outline-none transition-colors focus:border-ring focus:ring-2 focus:ring-ring/50"
-              />
-              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground">
-                %
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <span className="block text-sm font-medium text-foreground">
-              Loan Term
-            </span>
-            <div className="mt-1.5 flex gap-2 sm:gap-3">
-              {([30, 15] as const).map((term) => (
-                <button
-                  key={term}
-                  type="button"
-                  onClick={() => setLoanTerm(term)}
-                  className={`flex-1 rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
-                    loanTerm === term
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-input bg-background text-foreground hover:bg-muted"
-                  }`}
+      <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-2xl ring-1 ring-border sm:mt-12">
+        <div className="md:grid md:grid-cols-5">
+          {/* Input panel */}
+          <div className="bg-card p-5 sm:p-6 md:col-span-3 md:p-8">
+            <div className="space-y-5">
+              <div>
+                <label
+                  htmlFor="loan-amount"
+                  className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
                 >
-                  {term} Years
-                </button>
-              ))}
+                  Loan Amount
+                </label>
+                <div className="relative mt-2">
+                  <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">
+                    $
+                  </span>
+                  <input
+                    id="loan-amount"
+                    type="text"
+                    inputMode="numeric"
+                    value={loanAmount}
+                    onChange={(e) =>
+                      setLoanAmount(e.target.value.replace(/[^0-9,]/g, ""))
+                    }
+                    onBlur={() => setLoanAmount(formatWithCommas(loanAmount))}
+                    className="h-12 w-full rounded-xl border border-input bg-background pl-8 pr-4 text-lg font-medium text-foreground outline-none transition-all focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="interest-rate"
+                  className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  Interest Rate
+                </label>
+                <div className="relative mt-2">
+                  <input
+                    id="interest-rate"
+                    type="text"
+                    inputMode="decimal"
+                    value={interestRate}
+                    onChange={(e) =>
+                      setInterestRate(e.target.value.replace(/[^0-9.]/g, ""))
+                    }
+                    className="h-12 w-full rounded-xl border border-input bg-background pl-4 pr-10 text-lg font-medium text-foreground outline-none transition-all focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20"
+                  />
+                  <span className="absolute right-3.5 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">
+                    %
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <span className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Loan Term
+                </span>
+                <div className="mt-2 flex gap-2 sm:gap-3">
+                  {([30, 15] as const).map((term) => (
+                    <button
+                      key={term}
+                      type="button"
+                      onClick={() => setLoanTerm(term)}
+                      className={`flex-1 rounded-xl border px-4 py-3 text-sm font-semibold transition-all ${
+                        loanTerm === term
+                          ? "border-gold-500 bg-gold-500 text-navy-950 shadow-sm"
+                          : "border-input bg-background text-foreground hover:border-gold-500/40 hover:bg-gold-50"
+                      }`}
+                    >
+                      {term} Years
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="mt-8 rounded-lg bg-secondary p-5 text-center">
-          <p className="text-sm text-muted-foreground">
-            Estimated Monthly Payment
-          </p>
-          <p className="mt-1 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
-            {monthlyPayment > 0 ? formatCurrency(monthlyPayment) : "--"}
-          </p>
-          <p className="mt-1 text-xs text-muted-foreground">
-            Principal &amp; Interest
-          </p>
-        </div>
+          {/* Result panel */}
+          <div className="relative overflow-hidden bg-navy-900 p-5 sm:p-6 md:col-span-2 md:flex md:flex-col md:justify-center md:p-8">
+            {/* Dot grid pattern */}
+            <div
+              className="pointer-events-none absolute inset-0 opacity-[0.1]"
+              style={{
+                backgroundImage:
+                  "radial-gradient(circle, oklch(0.72 0.15 70) 0.5px, transparent 0.5px)",
+                backgroundSize: "16px 16px",
+              }}
+            />
 
-        <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">
-          This calculator provides estimates only and does not constitute a
-          commitment to lend. Actual rates, payments, and terms may vary.
-          Contact me for a personalized quote.
-        </p>
+            <div className="relative text-center">
+              <p className="text-xs font-semibold uppercase tracking-wider text-navy-400">
+                Monthly Payment
+              </p>
+              <p className="mt-2 text-3xl font-bold text-white sm:text-4xl">
+                {monthlyPayment > 0 ? formatCurrency(monthlyPayment) : "--"}
+              </p>
+              <p className="mt-1 text-xs text-navy-400">
+                Principal &amp; Interest
+              </p>
 
-        <div className="mt-5 text-center">
-          <a
-            href="#contact"
-            className={buttonVariants({ variant: "default", size: "lg" })}
-          >
-            Get Your Personalized Rate
-          </a>
+              {/* Breakdown */}
+              {monthlyPayment > 0 && (
+                <div className="mt-5 space-y-2 border-t border-navy-700/50 pt-5">
+                  <div className="flex justify-between text-xs">
+                    <span className="text-navy-400">Total Interest</span>
+                    <span className="font-medium text-navy-200">
+                      {totalInterest > 0 ? formatCurrency(totalInterest) : "--"}
+                    </span>
+                  </div>
+                  <div className="flex justify-between text-xs">
+                    <span className="text-navy-400">Total Cost</span>
+                    <span className="font-medium text-navy-200">
+                      {formatCurrency(totalPayment)}
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-5 h-px w-8 mx-auto bg-gold-500/40" />
+
+              <a
+                href="#contact"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold-400 transition-colors hover:text-gold-300"
+              >
+                Get Your Rate
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="h-3.5 w-3.5"
+                >
+                  <path d="M3.5 8h9M8.5 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
+      <p className="mx-auto mt-5 max-w-xl text-center text-xs leading-relaxed text-muted-foreground">
+        This calculator provides estimates only and does not constitute a
+        commitment to lend. Actual rates, payments, and terms may vary.
+        Contact me for a personalized quote.
+      </p>
     </SectionWrapper>
   );
 }
