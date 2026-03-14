@@ -74,8 +74,8 @@
 - [x] **PERF-01**: All images optimized via next/image (WebP, lazy loading, responsive)
 - [x] **PERF-02**: Subtle scroll-triggered animations using Motion (fadeInUp, once only)
 - [x] **PERF-03**: Respects `prefers-reduced-motion` for accessibility
-- [ ] **PERF-04**: Mobile-responsive end-to-end (mobile-first Tailwind approach)
-- [ ] **PERF-05**: LCP < 2.5s, CLS < 0.1 targets
+- [x] **PERF-04**: Mobile-responsive end-to-end (mobile-first Tailwind approach)
+- [x] **PERF-05**: LCP < 2.5s, CLS < 0.1 targets
 
 ## v2 Requirements
 
@@ -147,8 +147,8 @@
 | PERF-01 | Phase 5 | Complete |
 | PERF-02 | Phase 5 | Complete |
 | PERF-03 | Phase 5 | Complete |
-| PERF-04 | Phase 5 | Pending |
-| PERF-05 | Phase 5 | Pending |
+| PERF-04 | Phase 5 | Complete |
+| PERF-05 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 39 total

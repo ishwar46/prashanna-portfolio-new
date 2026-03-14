@@ -15,8 +15,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation and Compliance** - Layout shell, sticky header/footer, NMLS disclosures, and global styles (completed 2026-03-12)
 - [x] **Phase 2: Static Content Sections** - Hero, About, Services, and Testimonials as Server Components (completed 2026-03-13)
 - [x] **Phase 3: Interactive Sections** - Mortgage calculator, FAQ accordion, and contact form with email delivery (completed 2026-03-14)
-- [ ] **Phase 4: SEO and Analytics** - Metadata, Open Graph, JSON-LD structured data, sitemap, and Vercel Analytics
-- [ ] **Phase 5: Polish and Launch Validation** - Performance audit, animation quality, accessibility, and mobile verification
+- [x] **Phase 4: SEO and Analytics** - Metadata, Open Graph, JSON-LD structured data, sitemap, and Vercel Analytics (completed 2026-03-14)
+- [x] **Phase 5: Polish and Launch Validation** - Performance audit, animation quality, accessibility, and mobile verification (completed 2026-03-14)
 
 ## Phase Details
 
@@ -77,9 +77,10 @@ Plans:
   4. Fetching /robots.txt returns a valid robots file
   5. The Vercel Analytics dashboard shows page view and Web Vitals data after at least one real visit
 **Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 Plans:
-- [ ] 04-01-PLAN.md — Metadata expansion, dynamic OG image, sitemap, and robots.txt
-- [ ] 04-02-PLAN.md — JSON-LD structured data and Vercel Analytics integration
+- [x] 04-01-PLAN.md — Metadata expansion, dynamic OG image, sitemap, and robots.txt
+- [x] 04-02-PLAN.md — JSON-LD structured data and Vercel Analytics integration
 
 ### Phase 5: Polish and Launch Validation
 **Goal**: The site passes Core Web Vitals thresholds, renders correctly on real mobile devices, and is ready to receive real traffic without known deficiencies
@@ -90,10 +91,10 @@ Plans:
   2. Scroll-triggered animations play once on entry and do not replay on scroll-back; on a device with prefers-reduced-motion enabled, animations are suppressed
   3. Measured LCP is below 2.5 seconds and CLS is below 0.1 on a simulated mobile connection in Lighthouse or PageSpeed Insights
   4. Every section of the page is usable on a 375px-wide viewport with no horizontal scrolling and all tap targets are adequately sized
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 Plans:
-- [ ] 05-01-PLAN.md — Scroll animations (AnimatedSection + MotionConfig), favicon generation, image optimization audit
-- [ ] 05-02-PLAN.md — Build verification, mobile 375px audit, Core Web Vitals validation, launch readiness checkpoint
+- [x] 05-01-PLAN.md — Scroll animations (AnimatedSection + MotionConfig), favicon generation, image optimization audit
+- [x] 05-02-PLAN.md — Build verification, mobile 375px audit, Core Web Vitals validation, launch readiness checkpoint
 
 ## Progress
 
@@ -105,5 +106,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation and Compliance | 3/3 | Complete   | 2026-03-12 |
 | 2. Static Content Sections | 2/2 | Complete | 2026-03-13 |
 | 3. Interactive Sections | 2/2 | Complete | 2026-03-14 |
-| 4. SEO and Analytics | 1/2 | In Progress|  |
-| 5. Polish and Launch Validation | 1/2 | In Progress|  |
+| 4. SEO and Analytics | 2/2 | Complete | 2026-03-14 |
+| 5. Polish and Launch Validation | 2/2 | Complete | 2026-03-14 |
