@@ -57,3 +57,17 @@ src/
 - **Tailwind v4:** Config lives in `src/app/globals.css` via `@theme` — there is no `tailwind.config.js`
 - **Import alias:** `@/*` maps to `src/*`
 - **Motion animations:** Use `import { motion } from "motion/react"` — the `framer-motion` package name is deprecated
+
+## Mobile Responsiveness (STRICT)
+
+**This site must be fully responsive down to 375px viewport width (iPhone SE).** Every component must work on mobile phones.
+
+### Rules
+
+- **Mobile-first sizing:** Always start with mobile values and scale up using `sm:`, `md:`, `lg:` prefixes
+- **No fixed widths:** Never use hardcoded pixel widths that could overflow on small screens
+- **Responsive text:** Headings must scale down on mobile (e.g., `text-2xl sm:text-3xl md:text-4xl`)
+- **Responsive spacing:** Padding and gaps must be tighter on mobile (e.g., `p-4 sm:p-6 md:p-8`, `gap-4 sm:gap-6`)
+- **Touch targets:** All interactive elements must be at least 44px tall/wide on mobile
+- **Stack on mobile:** Multi-column layouts must collapse to single column on small screens
+- **Test at 375px:** Every new component or layout change must be visually verified at 375px width

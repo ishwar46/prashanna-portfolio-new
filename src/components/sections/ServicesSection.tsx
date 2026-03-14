@@ -12,13 +12,13 @@ export function ServicesSection() {
           Explore the right financing option for your situation
         </p>
       </div>
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((service) => (
           <a
             key={service.slug}
             href={`?service=${service.slug}#contact`}
             data-service={service.slug}
-            className="group block rounded-xl border border-border border-t-4 border-t-gold-500 bg-card p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+            className="group block rounded-xl border border-border border-t-4 border-t-gold-500 bg-card p-4 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:p-6"
           >
             <h3 className="text-lg font-semibold text-card-foreground group-hover:text-gold-700">
               {service.name}

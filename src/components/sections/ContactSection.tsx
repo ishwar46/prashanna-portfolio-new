@@ -29,9 +29,9 @@ export function ContactSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-12 max-w-xl">
+      <div className="mx-auto mt-8 max-w-xl sm:mt-12">
         {state.success ? (
-          <div className="rounded-xl border border-border bg-card p-8 text-center">
+          <div className="rounded-xl border border-border bg-card p-5 text-center sm:p-8">
             <p className="text-lg font-semibold text-foreground">
               {state.message}
             </p>
@@ -46,7 +46,7 @@ export function ContactSection() {
             </p>
           </div>
         ) : (
-          <form action={formAction} className="space-y-5">
+          <form action={formAction} className="space-y-4 sm:space-y-5">
             {state.success === false && state.message && (
               <div className="rounded-lg border border-destructive/30 bg-destructive/10 p-4 text-sm text-destructive">
                 {state.message}

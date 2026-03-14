@@ -63,7 +63,7 @@ export function CalculatorSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-12 max-w-xl rounded-xl border border-border bg-card p-6 shadow-sm md:p-8">
+      <div className="mx-auto mt-8 max-w-xl rounded-xl border border-border bg-card p-4 shadow-sm sm:mt-12 sm:p-6 md:p-8">
         <div className="space-y-5">
           <div>
             <label
@@ -116,7 +116,7 @@ export function CalculatorSection() {
             <span className="block text-sm font-medium text-foreground">
               Loan Term
             </span>
-            <div className="mt-1.5 flex gap-3">
+            <div className="mt-1.5 flex gap-2 sm:gap-3">
               {([30, 15] as const).map((term) => (
                 <button
                   key={term}
@@ -139,7 +139,7 @@ export function CalculatorSection() {
           <p className="text-sm text-muted-foreground">
             Estimated Monthly Payment
           </p>
-          <p className="mt-1 text-4xl font-bold text-foreground">
+          <p className="mt-1 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
             {monthlyPayment > 0 ? formatCurrency(monthlyPayment) : "--"}
           </p>
           <p className="mt-1 text-xs text-muted-foreground">

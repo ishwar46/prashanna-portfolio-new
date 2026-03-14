@@ -17,8 +17,8 @@ const socialEntries = [
 export function Footer() {
   return (
     <footer className="bg-navy-950 text-navy-200">
-      <div className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:py-12">
+        <div className="grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-bold text-white">
               Prashanna Sangroula
@@ -87,7 +87,7 @@ export function Footer() {
 
       <div className="border-t border-navy-800">
         <div className="mx-auto max-w-6xl px-4 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center text-xs text-navy-400">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-center text-xs text-navy-400 sm:gap-x-4">
             <span className="flex items-center gap-1">
               <Home className="size-3.5" />
               {COMPLIANCE.equalHousing}

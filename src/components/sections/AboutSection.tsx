@@ -11,14 +11,14 @@ const STATS = [
 export function AboutSection() {
   return (
     <SectionWrapper id={SECTION_IDS.about}>
-      <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+      <div className="flex flex-col items-center gap-6 sm:gap-8 md:flex-row md:gap-12 lg:gap-16">
         <div className="shrink-0">
           <Image
             src="/images/prashanna.png"
             alt="Prashanna Sangroula"
             width={256}
             height={256}
-            className="size-48 rounded-full object-cover md:size-64"
+            className="size-40 rounded-full object-cover sm:size-48 md:size-64"
           />
         </div>
         <div className="flex-1">
@@ -50,11 +50,11 @@ export function AboutSection() {
               guidance.
             </p>
           </div>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-6 flex flex-wrap gap-3 sm:mt-8 sm:gap-4">
             {STATS.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-lg bg-secondary px-6 py-4 text-center"
+                className="rounded-lg bg-secondary px-4 py-3 text-center sm:px-6 sm:py-4"
               >
                 <div className="text-2xl font-bold text-navy-900">
                   {stat.value}

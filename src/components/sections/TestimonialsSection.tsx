@@ -12,13 +12,13 @@ export function TestimonialsSection() {
           Hear from homeowners I&apos;ve helped
         </p>
       </div>
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
         {TESTIMONIALS.map((testimonial) => (
           <div
             key={testimonial.name}
-            className="rounded-xl border border-border bg-card p-6 shadow-sm"
+            className="rounded-xl border border-border bg-card p-4 shadow-sm sm:p-6"
           >
-            <span className="font-serif text-4xl leading-none text-gold-500">
+            <span className="font-serif text-3xl leading-none text-gold-500 sm:text-4xl">
               {"\u201C"}
             </span>
             <p className="mt-2 leading-relaxed text-foreground">

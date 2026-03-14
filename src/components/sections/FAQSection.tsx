@@ -19,11 +19,11 @@ export function FAQSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-12 max-w-2xl">
+      <div className="mx-auto mt-8 max-w-2xl sm:mt-12">
         <Accordion defaultValue={[]}>
           {FAQ_ITEMS.map((item, index) => (
             <AccordionItem key={index} value={index}>
-              <AccordionTrigger className="text-base text-foreground">
+              <AccordionTrigger className="text-sm text-foreground sm:text-base">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">

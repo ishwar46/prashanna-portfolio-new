@@ -17,7 +17,7 @@ export function SectionWrapper({
     <section
       id={id}
       className={cn(
-        "px-4 py-16 md:py-24",
+        "px-4 py-12 sm:py-16 md:py-24",
         alternate ? "bg-secondary" : "bg-background",
         className
       )}
