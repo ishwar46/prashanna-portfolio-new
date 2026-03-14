@@ -42,9 +42,9 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/prashannasangroula",
-  facebook: "https://facebook.com/prashannasangroula",
-  linkedin: "https://linkedin.com/in/prashanna-sangroula-64867563",
+  facebook: "https://www.facebook.com/nepal.rocker/",
+  instagram: "https://www.instagram.com/realtorprashanna",
+  linkedin: "https://www.linkedin.com/in/prashanna-sangroula-64867563/",
 } as const;
 
 export const SECTION_IDS = {
