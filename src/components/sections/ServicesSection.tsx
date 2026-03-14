@@ -73,10 +73,10 @@ export function ServicesSection() {
       </div>
 
       <m.div
+        key={activeTab}
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
+        animate="visible"
         className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5 md:grid-cols-2 lg:grid-cols-3"
       >
         {filtered.map((service, index) => (
