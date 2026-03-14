@@ -71,9 +71,9 @@
 
 ### Performance & Polish
 
-- [ ] **PERF-01**: All images optimized via next/image (WebP, lazy loading, responsive)
-- [ ] **PERF-02**: Subtle scroll-triggered animations using Motion (fadeInUp, once only)
-- [ ] **PERF-03**: Respects `prefers-reduced-motion` for accessibility
+- [x] **PERF-01**: All images optimized via next/image (WebP, lazy loading, responsive)
+- [x] **PERF-02**: Subtle scroll-triggered animations using Motion (fadeInUp, once only)
+- [x] **PERF-03**: Respects `prefers-reduced-motion` for accessibility
 - [ ] **PERF-04**: Mobile-responsive end-to-end (mobile-first Tailwind approach)
 - [ ] **PERF-05**: LCP < 2.5s, CLS < 0.1 targets
 
@@ -144,9 +144,9 @@
 | SEO-03 | Phase 4 | Complete |
 | SEO-04 | Phase 4 | Complete |
 | SEO-05 | Phase 4 | Complete |
-| PERF-01 | Phase 5 | Pending |
-| PERF-02 | Phase 5 | Pending |
-| PERF-03 | Phase 5 | Pending |
+| PERF-01 | Phase 5 | Complete |
+| PERF-02 | Phase 5 | Complete |
+| PERF-03 | Phase 5 | Complete |
 | PERF-04 | Phase 5 | Pending |
 | PERF-05 | Phase 5 | Pending |
 
