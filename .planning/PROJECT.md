@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A lead-generation portfolio website for Prashanna Sangroula, a Mortgage Loan Officer (NMLS #2528620) at Loan Factory, Inc. The site serves as his standalone professional presence — separate from his Loan Factory profile — designed to build trust with visitors and convert them into consultation leads via a contact form and prominent phone number.
+A lead-generation portfolio website for Prashanna Sangroula — a **Mortgage Loan Officer** (NMLS #2528620) at Loan Factory, Inc. and a **licensed Realtor** (VA License #225273183) at oNest Real Estate, Fairfax, VA. The site serves as his standalone professional presence designed to build trust and convert visitors into consultation leads through a contact form, phone CTAs, and professional credibility.
 
 ## Core Value
 
@@ -12,59 +12,66 @@ Visitors trust Prashanna enough to submit a contact form or call him within one 
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Hero section with headline, CTA, professional photo, dot-grid background — v1.0
+- ✓ Services section with 14 loan types + 3 real estate services, category filter tabs — v1.0
+- ✓ About section with dual-role bio, overlapping stats card, professional photo — v1.0
+- ✓ Client testimonials with real Google reviews — v1.0
+- ✓ Interactive mortgage calculator with real-time P&I estimates — v1.0
+- ✓ FAQ accordion with 8 loan process questions — v1.0
+- ✓ Contact form with Zod validation, nodemailer email delivery, honeypot — v1.0
+- ✓ Phone numbers visible on header, hero, contact panel, footer — v1.0
+- ✓ Single-page layout with smooth scroll anchor navigation — v1.0
+- ✓ Navy/gold editorial design with scroll animations — v1.0
+- ✓ Mobile-responsive at 375px with no horizontal scroll — v1.0
+- ✓ SEO: metadata, dynamic OG image, JSON-LD (Person + LocalBusiness + RealEstateAgent) — v1.0
+- ✓ Sitemap, robots.txt, Vercel Analytics + Speed Insights — v1.0
+- ✓ LCP 1.8s, CLS 0, WCAG-compliant color contrast — v1.0
+- ✓ PS monogram favicon — v1.0
 
 ### Active
 
-- [ ] Hero section with strong headline, CTA, and professional photo
-- [ ] Services section showcasing loan types (Conventional, FHA, VA, USDA, Jumbo, DSCR, Bank Statement, Foreign National, Refinancing, HELOC, Reverse Mortgage)
-- [ ] About/bio section telling Prashanna's story and building credibility
-- [ ] Client testimonials section with reviews and success stories
-- [ ] Interactive mortgage calculator (estimate monthly payments)
-- [ ] FAQ section covering common loan process questions
-- [ ] Contact form (name, phone, email, message) as primary lead capture
-- [ ] Phone number (571) 222-5555 visible on every section / sticky header
-- [ ] Single-page layout with smooth scroll anchor navigation
-- [ ] Clean, modern, minimal design — fintech-startup feel
-- [ ] Mobile-responsive end-to-end
-- [ ] SEO optimized (meta tags, Open Graph, structured data for local business)
-- [ ] Fast load times (static generation, optimized images)
-- [ ] Deploy to Vercel (custom domain added later)
+(None — ship to validate in next milestone)
 
 ### Out of Scope
 
-- Blog / content marketing — not v1, consider for SEO later
+- Blog / content marketing — consider for SEO in v2
 - Online application / loan origination — handled by Loan Factory systems
-- User accounts / login — no need for a portfolio site
+- User accounts / login — not needed for a portfolio site
 - Payment processing — not applicable
-- Multi-language support — English only for v1
-- CRM integration — Prashanna follows up manually from form submissions
+- Multi-language support — English only for now
+- CRM integration — Prashanna follows up manually
+- Dark mode — not requested
 
 ## Context
 
-- **Current presence:** loanfactory.com/prashannasangroula (company profile page)
-- **Traffic sources:** Mix of referrals (Prashanna sends link), social media, and Google search
-- **Audience:** Potential homebuyers and refinancers looking for a loan officer they can trust
-- **Professional photos:** Available and ready to use
-- **Company:** Loan Factory, Inc. (NMLS #320841), headquartered in San Jose, CA
-- **Contact:** prashanna@loanfactory.com, (571) 222-5555
+- **Shipped:** v1.0 MVP (2026-03-14), 2,552 LOC TypeScript/TSX
+- **Tech stack:** Next.js 16.1, React 19.2, Tailwind CSS v4, shadcn/ui, Motion 12.36
+- **Dual role:** Mortgage (Loan Factory, 246+ lenders, 12 states) + Real Estate (oNest, Fairfax VA)
+- **Contact:** (571) 222-5555 (mortgage), (703) 321-6914 (real estate)
+- **Office:** 9697 Main St, Fairfax, VA 22031
+- **Deployment:** Ready for Vercel — needs NEXT_PUBLIC_SITE_URL and SMTP env vars
 
 ## Constraints
 
-- **Tech stack:** Next.js 16.1, React 19.2, Tailwind CSS v4, shadcn/ui CLI v4, Motion 12.36 — already scaffolded
+- **Tech stack:** Next.js 16.1, React 19.2, Tailwind CSS v4, shadcn/ui CLI v4, Motion 12.36
 - **Deployment:** Vercel (free tier initially, custom domain later)
-- **Design:** Clean & modern / fintech aesthetic — no cluttered icons or playful elements
-- **Compliance:** NMLS number must be displayed (regulatory requirement for loan officers)
-- **Form handling:** Simple email delivery or serverless function — no backend/database needed
+- **Design:** Navy/gold editorial aesthetic — dot-grid patterns, gold accents, refined typography
+- **Compliance:** NMLS #2528620 and VA Real Estate License #225273183 must be displayed
+- **Form handling:** Nodemailer with Gmail SMTP — no backend/database needed
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Single-page layout | Simpler UX for lead gen — fewer clicks to CTA | — Pending |
-| Next.js 16.1 + Tailwind v4 | Latest stack, SSG for speed + SEO, easy Vercel deploy | — Pending |
-| Contact form over Calendly | Prashanna prefers to follow up manually, lower friction for visitors | — Pending |
-| No blog in v1 | Focus on core lead gen first, add content marketing later | — Pending |
+| Single-page layout | Simpler UX for lead gen — fewer clicks to CTA | ✓ Good |
+| Next.js 16.1 + Tailwind v4 | Latest stack, SSG for speed + SEO, easy Vercel deploy | ✓ Good |
+| Contact form over Calendly | Prashanna prefers manual follow-up, lower friction | ✓ Good |
+| No blog in v1 | Focus on core lead gen first | ✓ Good — consider for v2 |
+| Nodemailer over Resend | Resend domain not verified; Gmail SMTP works now | ✓ Good |
+| Navy/gold editorial design | Trust/finance aesthetic, unique and memorable | ✓ Good |
+| Dual role (Mortgage + Realtor) | Competitive advantage — one professional for everything | ✓ Good |
+| LazyMotion for animations | Reduces TBT, tree-shakes Motion bundle | ✓ Good |
+| WebP hero image | 348KB PNG → 28KB WebP, major LCP improvement | ✓ Good |
 
 ---
-*Last updated: 2026-03-12 after initialization*
+*Last updated: 2026-03-14 after v1.0 milestone*
