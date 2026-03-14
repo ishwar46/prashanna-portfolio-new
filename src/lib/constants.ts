@@ -188,24 +188,27 @@ export interface Testimonial {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "John D.",
-    context: "VA Home Purchase",
+    name: "Pema Norbu",
+    context: "Home Loan",
     quote:
-      "Prashanna made the entire VA loan process seamless from start to finish. He was incredibly patient with all the paperwork and kept me informed at every step. I never felt lost or overwhelmed, even as a first-time buyer using my VA benefit.",
+      "We had an absolutely wonderful experience working with Prashanna. He was very professional, calm, and supportive throughout the entire loan process. He guided us through every step with patience and clarity, making everything smooth and stress-free. Five stars all the way!",
   },
   {
-    name: "Maria S.",
-    context: "First-Time FHA Buyer",
+    name: "Mansingh Mongar",
+    context: "Home Purchase & Sale",
     quote:
-      "As a first-time homebuyer, I had a million questions and Prashanna answered every single one. He walked me through the FHA process, explained what to expect, and helped me find a payment I was comfortable with. I couldn't have done it without him.",
+      "Prashanna went above and beyond. He explained every step clearly, helped us understand all loan options, and secured an incredible 5.25% interest rate. He also personally helped sell our home in Virginia for the best possible price and made our move to New Hampshire smooth and stress-free.",
   },
   {
-    name: "Robert K.",
-    context: "Cash-Out Refinance",
+    name: "Diamond Thapa",
+    context: "Mortgage Support",
     quote:
-      "I reached out to Prashanna about refinancing and he responded the same day. He found me a significantly lower rate and walked me through the cash-out process clearly. The savings have been real, and I only wish I'd called him sooner.",
+      "Great service throughout the entire process. Mr. Prashanna as a loan officer was knowledgeable, responsive, and made everything easy to understand. The communication and follow-through were excellent, and the whole experience felt smooth and stress-free. Highly recommend!",
   },
 ] as const;
+
+export const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/place/Prashanna+Sangroula+Mortgage+Loan+originatior+NMLS%232528620/@37.8307674,-80.0731485,2937069m/data=!3m1!1e3!4m16!1m9!3m8!1s0x6efcd103cc86e69b:0x9ab7ceba4f888b06!2sPrashanna+Sangroula+Mortgage+Loan+originatior+NMLS%232528620!8m2!3d37.8307674!4d-80.0731485!9m1!1b1!16s%2Fg%2F11ln_3979g!3m5!1s0x6efcd103cc86e69b:0x9ab7ceba4f888b06!8m2!3d37.8307674!4d-80.0731485!16s%2Fg%2F11ln_3979g?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D";
 
 export interface FAQItem {
   question: string;

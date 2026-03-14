@@ -1,5 +1,5 @@
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import { SECTION_IDS, TESTIMONIALS } from "@/lib/constants";
+import { SECTION_IDS, TESTIMONIALS, GOOGLE_REVIEWS_URL } from "@/lib/constants";
 
 export function TestimonialsSection() {
   return (
@@ -57,6 +57,27 @@ export function TestimonialsSection() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* View more link */}
+      <div className="mt-8 text-center sm:mt-10">
+        <a
+          href={GOOGLE_REVIEWS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-600"
+        >
+          View More Reviews on Google
+          <svg
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            className="h-4 w-4"
+          >
+            <path d="M4 12L12 4M12 4H6M12 4v6" />
+          </svg>
+        </a>
       </div>
     </SectionWrapper>
   );

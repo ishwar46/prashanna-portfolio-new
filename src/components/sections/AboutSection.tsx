@@ -26,7 +26,7 @@ export function AboutSection() {
         <div className="flex flex-col items-center md:col-span-5 md:items-start">
           <div className="relative w-full max-w-xs md:max-w-none">
             <Image
-              src="/images/prashanna.png"
+              src="/images/prashanna_new.webp"
               alt="Prashanna Sangroula"
               width={400}
               height={480}
