@@ -61,7 +61,10 @@ Plans:
   3. Submitting the contact form with valid data (name, email, phone, message, loan type) shows a success confirmation to the user and delivers the submission to prashanna@loanfactory.com
   4. Submitting the form with missing or invalid fields shows clear, field-level error messages without navigating away from the page
   5. The form includes a hidden honeypot field invisible to real users
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Install deps, FAQ data constants, CalculatorSection, FAQSection
+- [ ] 03-02-PLAN.md — Contact form Server Action, email delivery, ContactSection, service pre-selection wiring, page assembly
 
 ### Phase 4: SEO and Analytics
 **Goal**: The site is fully discoverable by search engines, shareable on social media with a rich preview, and instrumented to capture conversion data from the first visitor
@@ -95,6 +98,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation and Compliance | 3/3 | Complete   | 2026-03-12 |
 | 2. Static Content Sections | 1/2 | In Progress | - |
-| 3. Interactive Sections | 0/TBD | Not started | - |
+| 3. Interactive Sections | 0/2 | Not started | - |
 | 4. SEO and Analytics | 0/TBD | Not started | - |
 | 5. Polish and Launch Validation | 0/TBD | Not started | - |
