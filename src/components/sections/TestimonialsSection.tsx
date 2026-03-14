@@ -1,4 +1,5 @@
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SECTION_IDS, TESTIMONIALS, GOOGLE_REVIEWS_URL } from "@/lib/constants";
 
 export function TestimonialsSection() {
@@ -16,7 +17,7 @@ export function TestimonialsSection() {
         </p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-5 md:grid-cols-3">
+      <AnimatedSection className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:gap-5 md:grid-cols-3">
         {TESTIMONIALS.map((testimonial) => (
           <div
             key={testimonial.name}
@@ -57,7 +58,7 @@ export function TestimonialsSection() {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedSection>
 
       {/* View more link */}
       <div className="mt-8 text-center sm:mt-10">

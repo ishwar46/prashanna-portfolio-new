@@ -1,4 +1,5 @@
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import {
   Accordion,
   AccordionContent,
@@ -22,7 +23,7 @@ export function FAQSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-8 max-w-2xl sm:mt-12">
+      <AnimatedSection className="mx-auto mt-8 max-w-2xl sm:mt-12">
         <div className="space-y-3">
           <Accordion defaultValue={[]}>
             {FAQ_ITEMS.map((item, index) => (
@@ -44,7 +45,7 @@ export function FAQSection() {
             ))}
           </Accordion>
         </div>
-      </div>
+      </AnimatedSection>
     </SectionWrapper>
   );
 }

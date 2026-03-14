@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { motion } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS } from "@/lib/constants";
 
@@ -68,7 +69,13 @@ export function CalculatorSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-2xl ring-1 ring-border sm:mt-12">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+        className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-2xl ring-1 ring-border sm:mt-12"
+      >
         <div className="md:grid md:grid-cols-5">
           {/* Input panel */}
           <div className="bg-card p-5 sm:p-6 md:col-span-3 md:p-8">
@@ -207,7 +214,7 @@ export function CalculatorSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <p className="mx-auto mt-5 max-w-xl text-center text-xs leading-relaxed text-muted-foreground">
         This calculator provides estimates only and does not constitute a

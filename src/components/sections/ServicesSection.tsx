@@ -1,8 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SECTION_IDS, SERVICES } from "@/lib/constants";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.35, ease: [0.25, 0.1, 0.25, 1] as const },
+  },
+};
 
 type Category = "all" | "mortgage" | "real-estate";
 
@@ -55,9 +72,16 @@ export function ServicesSection() {
         </div>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5 md:grid-cols-2 lg:grid-cols-3"
+      >
         {filtered.map((service, index) => (
-          <a
+          <motion.a
+            variants={itemVariants}
             key={service.slug}
             href={`?service=${service.slug}#contact`}
             data-service={service.slug}
@@ -95,9 +119,9 @@ export function ServicesSection() {
                 {service.audience}
               </p>
             </div>
-          </a>
+          </motion.a>
         ))}
-      </div>
+      </motion.div>
     </SectionWrapper>
   );
 }

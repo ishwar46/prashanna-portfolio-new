@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { useSearchParams } from "next/navigation";
+import { motion } from "motion/react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { submitContact } from "@/app/actions/contact";
 import { CONTACT, COMPLIANCE, COMPANIES, SECTION_IDS, SERVICES } from "@/lib/constants";
@@ -34,7 +35,13 @@ export function ContactSection() {
         </p>
       </div>
 
-      <div className="mx-auto mt-8 max-w-4xl overflow-hidden rounded-2xl ring-1 ring-border sm:mt-12">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+        className="mx-auto mt-8 max-w-4xl overflow-hidden rounded-2xl ring-1 ring-border sm:mt-12"
+      >
         <div className="md:grid md:grid-cols-5">
           {/* Form panel */}
           <div className="bg-card p-5 sm:p-6 md:col-span-3 md:p-8">
@@ -283,7 +290,7 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </SectionWrapper>
   );
 }

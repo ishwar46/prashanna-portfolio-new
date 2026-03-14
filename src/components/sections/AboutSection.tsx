@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SECTION_IDS, COMPANIES } from "@/lib/constants";
 
 const STATS = [
@@ -21,7 +22,7 @@ export function AboutSection() {
         </h2>
       </div>
 
-      <div className="mt-8 sm:mt-12 md:grid md:grid-cols-12 md:gap-10 lg:gap-14">
+      <AnimatedSection className="mt-8 sm:mt-12 md:grid md:grid-cols-12 md:gap-10 lg:gap-14">
         {/* Left column — Photo + Stats card */}
         <div className="flex flex-col items-center md:col-span-5 md:items-start">
           <div className="relative w-full max-w-xs md:max-w-none">
@@ -145,7 +146,7 @@ export function AboutSection() {
             </svg>
           </a>
         </div>
-      </div>
+      </AnimatedSection>
     </SectionWrapper>
   );
 }
