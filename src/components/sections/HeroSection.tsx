@@ -8,7 +8,7 @@ export function HeroSection() {
       id={SECTION_IDS.hero}
       className="bg-linear-to-br from-navy-900 via-navy-800 to-navy-950 pt-20"
     >
-      <div className="flex min-h-[calc(100svh-5rem)] flex-col items-center gap-6 sm:gap-8 md:flex-row md:items-center md:gap-12">
+      <div className="flex flex-col items-center gap-6 sm:gap-8 md:min-h-[calc(100svh-5rem)] md:flex-row md:items-center md:gap-12">
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
             Your Home Journey Starts Here
