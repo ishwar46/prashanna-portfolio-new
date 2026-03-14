@@ -63,27 +63,21 @@ export function AboutSection() {
 
             {/* Dual role badges below stats */}
             <div className="mt-4 flex flex-col gap-2 px-4 sm:px-8 md:px-0">
-              <div className="flex items-center gap-3 rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
-                <span className="h-2 w-2 shrink-0 rounded-full bg-gold-500" />
-                <div className="min-w-0">
-                  <p className="text-xs font-semibold text-foreground">
-                    {COMPANIES.loanFactory.role}
-                  </p>
-                  <p className="truncate text-[11px] text-muted-foreground">
-                    {COMPANIES.loanFactory.name}
-                  </p>
-                </div>
+              <div className="rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
+                <p className="text-xs font-semibold text-foreground">
+                  {COMPANIES.loanFactory.role}
+                </p>
+                <p className="truncate text-[11px] text-muted-foreground">
+                  {COMPANIES.loanFactory.name}
+                </p>
               </div>
-              <div className="flex items-center gap-3 rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
-                <span className="h-2 w-2 shrink-0 rounded-full bg-navy-500" />
-                <div className="min-w-0">
-                  <p className="text-xs font-semibold text-foreground">
-                    {COMPANIES.onest.role}
-                  </p>
-                  <p className="truncate text-[11px] text-muted-foreground">
-                    {COMPANIES.onest.name} &middot; {COMPANIES.onest.office}
-                  </p>
-                </div>
+              <div className="rounded-lg bg-card px-4 py-2.5 ring-1 ring-border">
+                <p className="text-xs font-semibold text-foreground">
+                  {COMPANIES.onest.role}
+                </p>
+                <p className="truncate text-[11px] text-muted-foreground">
+                  {COMPANIES.onest.name} &middot; {COMPANIES.onest.office}
+                </p>
               </div>
             </div>
           </div>
