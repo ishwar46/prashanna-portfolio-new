@@ -14,10 +14,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://prashannasangroula.com";
+
+const title = "Prashanna Sangroula | Mortgage Loan Officer & Realtor";
+const description =
+  "Licensed Mortgage Loan Officer (NMLS #2528620) and Realtor serving VA, DC, FL, GA, KY, MA, MD, NC, NH, OH, PA, and WA. Conventional, FHA, VA, USDA, Jumbo, DSCR, and Bank Statement loans. Free consultation.";
+
 export const metadata: Metadata = {
-  title: "Prashanna Sangroula | Mortgage Loan Officer",
-  description:
-    "Licensed Mortgage Loan Officer NMLS #2528620 at Loan Factory, Inc. Specializing in Conventional, FHA, VA, USDA, Jumbo, and investment loans.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    title,
+    description,
+    url: siteUrl,
+    siteName: "Prashanna Sangroula",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
